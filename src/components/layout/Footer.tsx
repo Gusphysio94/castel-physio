@@ -103,12 +103,27 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-navy-800/60 mt-16 pt-8 text-xs text-navy-500 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {new Date().getFullYear()} Castel Physio — Augustin Castel. Tous droits réservés.</p>
-          <p className="flex items-center gap-2">
-            <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400/60" />
-            Kinésithérapeute du sport — Bruxelles
-          </p>
+        <div className="border-t border-navy-800/60 mt-16 pt-8 text-xs text-navy-500">
+          <div className="flex flex-wrap justify-center gap-4 mb-4">
+            <Link href="/mentions-legales" className="hover:text-amber-400 transition-colors">
+              Mentions légales
+            </Link>
+            <span className="text-navy-700">·</span>
+            <Link href="/politique-confidentialite" className="hover:text-amber-400 transition-colors">
+              Politique de confidentialité
+            </Link>
+            <span className="text-navy-700">·</span>
+            <Link href="/conditions-generales" className="hover:text-amber-400 transition-colors">
+              Conditions générales
+            </Link>
+          </div>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; {new Date().getFullYear()} Castel Physio — Augustin Castel. Tous droits réservés.</p>
+            <p className="flex items-center gap-2">
+              <span className="inline-block w-1.5 h-1.5 rounded-full bg-amber-400/60" />
+              Kinésithérapeute du sport — Bruxelles
+            </p>
+          </div>
         </div>
       </div>
     </footer>
