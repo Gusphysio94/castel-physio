@@ -94,9 +94,12 @@ export default function Blog() {
                     <span className="text-sm text-navy-400">·</span>
                     <span className="text-sm text-navy-400">{article.readTime} de lecture</span>
                   </div>
-                  <h2 className="text-xl font-bold text-navy-900 mb-3 group-hover:text-amber-600 transition-colors">
+                  <h2 className="text-xl font-bold text-navy-900 mb-2 group-hover:text-amber-600 transition-colors">
                     {article.title}
                   </h2>
+                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-navy-100 text-navy-500 rounded-full mb-3">
+                    À venir
+                  </span>
                   <p className="text-navy-600 leading-relaxed">{article.excerpt}</p>
                 </article>
               </Link>

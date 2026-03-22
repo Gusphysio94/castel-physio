@@ -12,8 +12,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Adresse",
-    value: "Bruxelles, Belgique",
-    detail: "Adresse exacte communiquée lors de la prise de RDV",
+    value: "Centre Aspis, Avenue Jacques Brel 34, 1200 Bruxelles",
   },
   {
     icon: (
@@ -177,15 +176,18 @@ export default function Contact() {
                 ))}
               </div>
 
-              {/* Map placeholder */}
-              <div className="mt-10 aspect-[4/3] bg-navy-100 rounded-2xl flex items-center justify-center">
-                <div className="text-center text-navy-400">
-                  <svg className="w-10 h-10 mx-auto mb-2 opacity-50" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
-                  </svg>
-                  <p className="text-sm">Carte Google Maps</p>
-                  <p className="text-xs">À intégrer</p>
-                </div>
+              {/* Google Maps */}
+              <div className="mt-10 aspect-[4/3] rounded-2xl overflow-hidden">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.5!2d4.4!3d50.85!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c3c4a4e5a3e8a1%3A0x0!2sAvenue+Jacques+Brel+34%2C+1200+Woluwe-Saint-Lambert!5e0!3m2!1sfr!2sbe!4v1"
+                  width="100%"
+                  height="100%"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="Centre Aspis - Avenue Jacques Brel 34, 1200 Bruxelles"
+                />
               </div>
             </div>
           </div>
