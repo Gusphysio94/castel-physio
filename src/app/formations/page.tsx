@@ -4,9 +4,9 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = {
-  title: "Formations",
+  title: "Formations pour kinésithérapeutes — Tendinopathie, Kinéathlétisation",
   description:
-    "Formations pour kinésithérapeutes par Augustin Castel. Contenu evidence-based, pratique et directement applicable. En ligne et en présentiel.",
+    "Formations e-learning par Augustin Castel : Tendinopathie 2.0, Kinéathlétisation, Tendinopathie d'Achille 2.0. Contenu evidence-based pour professionnels de santé.",
 };
 
 const formations = [

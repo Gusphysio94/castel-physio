@@ -5,9 +5,9 @@ import Button from "@/components/ui/Button";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
-  title: "Kinésithérapie",
+  title: "Kinésithérapie du sport à Bruxelles",
   description:
-    "Consultations de kinésithérapie du sport à Bruxelles, téléconsultation et coaching sportif individualisé. Approche evidence-based par Augustin Castel.",
+    "Consultations de kinésithérapie du sport à Bruxelles par Augustin Castel. Bilan complet, téléconsultation et coaching sportif individualisé. Centre Aspis, Woluwe-Saint-Lambert.",
 };
 
 const services = [

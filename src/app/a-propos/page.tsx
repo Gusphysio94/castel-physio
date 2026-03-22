@@ -4,9 +4,9 @@ import Button from "@/components/ui/Button";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = {
-  title: "À propos",
+  title: "À propos d'Augustin Castel — Kinésithérapeute du sport",
   description:
-    "Découvrez le parcours d'Augustin Castel, kinésithérapeute du sport à Bruxelles. Approche evidence-based, formations et passion pour la performance.",
+    "Découvrez le parcours d'Augustin Castel, kinésithérapeute du sport à Bruxelles. Approche evidence-based, personnalisée et orientée résultats. Formateur pour professionnels de santé.",
 };
 
 const values = [
