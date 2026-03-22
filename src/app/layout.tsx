@@ -68,8 +68,7 @@ export const metadata: Metadata = {
     canonical: "https://castel-physio.com",
   },
   verification: {
-    // À compléter après inscription à Google Search Console
-    // google: "votre-code-de-verification",
+    google: "8FkGCR_XFJYyf9ewQIXyoT5tZtTr2nyQJg3E7ivg0Jc",
   },
 };
 
