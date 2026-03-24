@@ -22,7 +22,7 @@ export default function PolitiqueConfidentialite() {
               <li><strong>Nom :</strong> Augustin Castel</li>
               <li><strong>Adresse :</strong> Centre Aspis, Avenue Jacques Brel 34, 1200 Bruxelles</li>
               <li><strong>Numéro BCE :</strong> 0732.662.180</li>
-              <li><strong>Email :</strong> castelphysio94@hotmail.com</li>
+              <li><strong>Email :</strong> castelphysio94@gmail.com</li>
               <li><strong>Téléphone :</strong> +32 497 233 858</li>
             </ul>
           </div>
@@ -102,7 +102,7 @@ export default function PolitiqueConfidentialite() {
               <li><strong>Droit de retirer votre consentement :</strong> à tout moment, sans affecter la licéité du traitement antérieur</li>
             </ul>
             <p className="mt-4">
-              Pour exercer ces droits, contactez-moi par email à <strong>castelphysio94@hotmail.com</strong> ou
+              Pour exercer ces droits, contactez-moi par email à <strong>castelphysio94@gmail.com</strong> ou
               par courrier à l&apos;adresse du cabinet.
             </p>
             <p className="mt-4">

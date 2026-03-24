@@ -21,7 +21,7 @@ const contactInfo = [
       </svg>
     ),
     label: "Email",
-    value: "castelphysio94@hotmail.com",
+    value: "castelphysio94@gmail.com",
   },
   {
     icon: (
@@ -35,13 +35,37 @@ const contactInfo = [
   },
 ];
 
+const FORMSPREE_ID = "xykbggko";
+
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(false);
+  const [loading, setLoading] = useState(false);
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    // Placeholder — connect to Formspree, Resend, etc.
-    setSubmitted(true);
+    setLoading(true);
+    setError(false);
+
+    const form = e.currentTarget;
+    const data = new FormData(form);
+
+    try {
+      const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+        method: "POST",
+        body: data,
+        headers: { Accept: "application/json" },
+      });
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        setError(true);
+      }
+    } catch {
+      setError(true);
+    } finally {
+      setLoading(false);
+    }
   }
 
   return (
@@ -146,11 +170,17 @@ export default function Contact() {
                       className="w-full px-4 py-3 rounded-lg border border-navy-200 focus:border-amber-400 focus:ring-2 focus:ring-amber-400/20 outline-none transition-all text-navy-900 resize-vertical"
                     />
                   </div>
+                  {error && (
+                    <p className="text-red-600 text-sm">
+                      Une erreur est survenue. Veuillez réessayer ou envoyer un email directement à castelphysio94@gmail.com.
+                    </p>
+                  )}
                   <button
                     type="submit"
-                    className="w-full px-6 py-3 bg-amber-500 text-navy-950 font-semibold rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer"
+                    disabled={loading}
+                    className="w-full px-6 py-3 bg-amber-500 text-navy-950 font-semibold rounded-lg hover:bg-amber-400 transition-colors shadow-md cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
                   >
-                    Envoyer le message
+                    {loading ? "Envoi en cours..." : "Envoyer le message"}
                   </button>
                 </form>
               )}

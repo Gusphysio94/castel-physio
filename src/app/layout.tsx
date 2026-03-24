@@ -92,7 +92,7 @@ export default function RootLayout({
               description: "Cabinet de kinésithérapie du sport à Bruxelles. Consultations, téléconsultation, coaching sportif et formations pour professionnels de santé.",
               url: "https://castel-physio.com",
               telephone: "+32497233858",
-              email: "castelphysio94@hotmail.com",
+              email: "castelphysio94@gmail.com",
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Avenue Jacques Brel 34",

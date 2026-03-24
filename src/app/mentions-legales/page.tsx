@@ -26,7 +26,7 @@ export default function MentionsLegales() {
               <li><strong>Statut TVA :</strong> Non assujetti (exempté en tant que professionnel de santé)</li>
               <li><strong>Adresse :</strong> Centre Aspis, Avenue Jacques Brel 34, 1200 Bruxelles</li>
               <li><strong>Téléphone :</strong> +32 497 233 858</li>
-              <li><strong>Email :</strong> castelphysio94@hotmail.com</li>
+              <li><strong>Email :</strong> castelphysio94@gmail.com</li>
             </ul>
           </div>
 
