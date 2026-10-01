@@ -39,6 +39,22 @@ html {
   scroll-behavior: smooth;
 }
 
+/* ─── Règle typographique : 2 polices seulement ───
+   Playfair Display (accent) : titres h1 et h2, grands chiffres, une citation par page.
+   Geist (neutre) : tout le reste, y compris les titres h3 à h6. */
+@layer base {
+  h1,
+  h2 {
+    font-family: var(--font-display), Georgia, serif;
+  }
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: var(--font-sans), system-ui, sans-serif;
+  }
+}
+
 /* ─── Display font for headings ─── */
 .font-display {
   font-family: var(--font-display), Georgia, serif;

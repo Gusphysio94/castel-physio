@@ -16,8 +16,8 @@ export default function Footer() {
                 <span className="text-amber-400 font-bold text-xl font-display italic">C</span>
               </div>
               <div>
-                <span className="font-bold text-white text-lg">Castel</span>
-                <span className="font-bold text-amber-400 text-lg"> Physio</span>
+                <span className="font-semibold text-white text-lg">Castel</span>
+                <span className="font-semibold text-amber-400 text-lg"> Physio</span>
               </div>
             </div>
             <p className="text-sm leading-relaxed text-navy-400 max-w-xs">
@@ -41,7 +41,7 @@ export default function Footer() {
 
           {/* Navigation */}
           <div className="md:col-span-2 md:col-start-6">
-            <h4 className="font-semibold text-white text-sm mb-5 uppercase tracking-wider">Navigation</h4>
+            <h4 className="font-semibold text-white text-sm mb-5 uppercase tracking-[0.2em]">Navigation</h4>
             <ul className="space-y-3 text-sm">
               {[
                 { href: "/", label: "Accueil" },
@@ -61,7 +61,7 @@ export default function Footer() {
 
           {/* Informations */}
           <div className="md:col-span-2">
-            <h4 className="font-semibold text-white text-sm mb-5 uppercase tracking-wider">Infos</h4>
+            <h4 className="font-semibold text-white text-sm mb-5 uppercase tracking-[0.2em]">Infos</h4>
             <ul className="space-y-3 text-sm">
               {[
                 { href: "/a-propos", label: "À propos" },
@@ -86,7 +86,7 @@ export default function Footer() {
 
           {/* Contact */}
           <div className="md:col-span-3">
-            <h4 className="font-semibold text-white text-sm mb-5 uppercase tracking-wider">Contact</h4>
+            <h4 className="font-semibold text-white text-sm mb-5 uppercase tracking-[0.2em]">Contact</h4>
             <ul className="space-y-3 text-sm">
               <li className="flex items-start gap-3">
                 <svg className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

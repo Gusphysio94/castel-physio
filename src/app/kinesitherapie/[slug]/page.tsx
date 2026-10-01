@@ -149,7 +149,7 @@ export default async function ConditionPage({ params }: Props) {
             <div className="space-y-12">
               {condition.subtypeGroups.map((group) => (
                 <div key={group.heading}>
-                  <h3 className="text-sm font-semibold uppercase tracking-widest text-navy-500 mb-4">
+                  <h3 className="text-sm font-semibold uppercase tracking-[0.2em] text-navy-500 mb-4">
                     {group.heading}
                   </h3>
                   <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
@@ -194,7 +194,7 @@ export default async function ConditionPage({ params }: Props) {
             <div className="space-y-12">
               {condition.sections.map((section) => (
                 <div key={section.heading}>
-                  <h3 className="text-xl md:text-2xl font-bold text-navy-900 mb-4">{section.heading}</h3>
+                  <h3 className="text-xl md:text-2xl font-semibold text-navy-900 mb-4">{section.heading}</h3>
                   <div className="space-y-4 text-navy-600 leading-relaxed">
                     {section.paragraphs?.map((p) => <p key={p}>{p}</p>)}
                     {section.list && (
@@ -223,11 +223,11 @@ export default async function ConditionPage({ params }: Props) {
               {condition.myths?.map((m) => (
                 <li key={m.myth} className="rounded-2xl border border-navy-100 bg-white overflow-hidden">
                   <div className="bg-navy-50 px-6 py-4 border-b border-navy-100">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-navy-400 mb-1">On entend souvent</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-navy-400 mb-1">On entend souvent</p>
                     <p className="font-display text-lg font-semibold text-navy-900 leading-snug">{m.myth}</p>
                   </div>
                   <div className="px-6 py-5 space-y-3 text-navy-600 leading-relaxed">
-                    <p className="text-xs font-semibold uppercase tracking-widest text-amber-600">En réalité</p>
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">En réalité</p>
                     {m.reality.map((r) => <p key={r}>{r}</p>)}
                   </div>
                 </li>
@@ -248,18 +248,18 @@ export default async function ConditionPage({ params }: Props) {
                   <span className="font-display text-4xl font-bold text-amber-200">
                     {String(i + 1).padStart(2, "0")}
                   </span>
-                  <h3 className="mt-2 mb-2 text-lg font-bold text-navy-900">{step.title}</h3>
+                  <h3 className="mt-2 mb-2 text-lg font-semibold text-navy-900">{step.title}</h3>
                   <p className="text-navy-600 leading-relaxed">{step.text}</p>
                 </li>
               ))}
             </ol>
 
             {condition.redFlags && condition.redFlags.length > 0 && (
-              <div className="mt-12 rounded-2xl border border-red-200 bg-red-50 p-6 md:p-8">
-                <h3 className="text-lg font-bold text-red-900 mb-3">
+              <div className="mt-12 rounded-2xl border border-amber-200 bg-amber-50 p-6 md:p-8">
+                <h3 className="text-lg font-semibold text-navy-900 mb-3">
                   Quand consulter rapidement un médecin
                 </h3>
-                <ul className="list-disc pl-6 space-y-2 text-red-900/90">
+                <ul className="list-disc pl-6 space-y-2 text-navy-800">
                   {condition.redFlags.map((flag) => <li key={flag}>{flag}</li>)}
                 </ul>
               </div>
@@ -287,7 +287,7 @@ export default async function ConditionPage({ params }: Props) {
                 </p>
                 {condition.testimonial && (
                   <figure className="mt-6 border-l-2 border-amber-400/60 pl-4">
-                    <blockquote className="text-navy-200 italic leading-relaxed">
+                    <blockquote className="text-navy-200 leading-relaxed">
                       &laquo;&nbsp;{condition.testimonial.quote}&nbsp;&raquo;
                     </blockquote>
                     <figcaption className="mt-2 text-sm text-navy-400">{condition.testimonial.author}</figcaption>
@@ -344,7 +344,7 @@ export default async function ConditionPage({ params }: Props) {
               <summary className="cursor-pointer list-none flex items-center justify-between gap-4 p-5 md:p-6">
                 <span>
                   <span className="block text-xs font-semibold uppercase tracking-[0.2em] text-amber-600">Sources</span>
-                  <span className="block mt-1 text-lg font-bold text-navy-900">
+                  <span className="block mt-1 text-lg font-semibold text-navy-900">
                     Références scientifiques ({condition.references.length})
                   </span>
                 </span>

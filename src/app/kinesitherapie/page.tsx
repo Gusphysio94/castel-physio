@@ -76,7 +76,7 @@ export default function Kinesitherapie() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-navy-950 to-navy-900 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">
+          <p className="text-amber-400 font-semibold text-sm uppercase tracking-[0.2em] mb-4">
             Kinésithérapie
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -116,8 +116,8 @@ export default function Kinesitherapie() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             {approach.map((item) => (
               <div key={item.step} className="relative">
-                <span className="text-5xl font-bold text-amber-200">{item.step}</span>
-                <h3 className="text-lg font-bold text-navy-900 mt-3 mb-2">{item.title}</h3>
+                <span className="text-5xl font-semibold text-amber-200">{item.step}</span>
+                <h3 className="text-lg font-semibold text-navy-900 mt-3 mb-2">{item.title}</h3>
                 <p className="text-sm text-navy-600 leading-relaxed">{item.description}</p>
               </div>
             ))}
@@ -140,7 +140,7 @@ export default function Kinesitherapie() {
                 href={`/kinesitherapie/${c.slug}`}
                 className="block bg-white rounded-2xl border border-navy-100 p-6 hover:border-amber-400 transition-colors"
               >
-                <h3 className="text-lg font-bold text-navy-900 mb-2">{c.label}</h3>
+                <h3 className="text-lg font-semibold text-navy-900 mb-2">{c.label}</h3>
                 <p className="text-sm text-navy-600 leading-relaxed">{c.lead}</p>
                 <span className="mt-3 inline-block text-sm font-medium text-amber-600">En savoir plus →</span>
               </Link>

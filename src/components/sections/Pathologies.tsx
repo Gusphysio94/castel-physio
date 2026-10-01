@@ -33,7 +33,7 @@ export default function Pathologies() {
                 href={`/kinesitherapie/${c.slug}`}
                 className="group block h-full rounded-2xl border border-navy-100 bg-white p-6 transition hover:border-amber-400 hover:shadow-md"
               >
-                <h3 className="font-display text-lg font-bold text-navy-900 leading-snug mb-2">{c.label}</h3>
+                <h3 className=" text-lg font-semibold text-navy-900 leading-snug mb-2">{c.label}</h3>
                 <p className="text-sm text-navy-500 leading-relaxed">{teasers[c.slug]}</p>
                 <span className="mt-4 inline-block text-sm font-medium text-amber-600 transition-transform group-hover:translate-x-1">
                   En savoir plus →

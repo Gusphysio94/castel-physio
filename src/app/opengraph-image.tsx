@@ -15,17 +15,17 @@ export default function OpengraphImage() {
           flexDirection: "column",
           justifyContent: "center",
           padding: 90,
-          background: "linear-gradient(135deg, #0b1a33 0%, #14294d 100%)",
+          background: "linear-gradient(135deg, #0a1929 0%, #102a43 100%)",
           color: "white",
         }}
       >
-        <div style={{ fontSize: 28, letterSpacing: 6, textTransform: "uppercase", color: "#fbbf24" }}>
+        <div style={{ fontSize: 28, letterSpacing: 6, textTransform: "uppercase", color: "#FF5757" }}>
           Kinésithérapie du sport · Bruxelles
         </div>
         <div style={{ fontSize: 88, fontWeight: 700, marginTop: 28, lineHeight: 1.1 }}>
           Augustin Castel
         </div>
-        <div style={{ fontSize: 40, marginTop: 24, color: "#cbd5e1" }}>
+        <div style={{ fontSize: 40, marginTop: 24, color: "#bcccdc" }}>
           Castel Physio · Soins, coaching et formations evidence-based
         </div>
       </div>

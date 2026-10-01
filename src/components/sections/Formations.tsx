@@ -66,11 +66,11 @@ function FormationCard({ formation }: { formation: typeof formations[number] }) 
           <div className="h-1.5 bg-gradient-to-r from-amber-400 via-amber-500 to-amber-400 rounded-t-2xl" />
           <div className="p-8">
             <div className="flex items-center gap-2 mb-5">
-              <span className="inline-block px-3 py-1 text-[11px] font-bold uppercase tracking-wider bg-amber-50 text-amber-700 rounded-full">
+              <span className="inline-block px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] bg-amber-50 text-amber-700 rounded-full">
                 {formation.tag}
               </span>
             </div>
-            <h3 className="text-lg font-bold text-navy-900 mb-3 font-display leading-snug">
+            <h3 className="text-lg font-semibold text-navy-900 mb-3 leading-snug">
               {formation.title}
             </h3>
             <p className="text-navy-500 text-[15px] leading-relaxed mb-5">
@@ -102,7 +102,7 @@ function FormationCard({ formation }: { formation: typeof formations[number] }) 
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950/50 via-transparent to-transparent rounded-2xl" />
           <div className="absolute bottom-0 left-0 right-0 p-5">
-            <h3 className="text-lg font-bold text-white font-display drop-shadow-lg">
+            <h3 className="text-lg font-semibold text-white drop-shadow-lg">
               {formation.title}
             </h3>
           </div>

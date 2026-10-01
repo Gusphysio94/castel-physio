@@ -15,7 +15,7 @@ export default function ServiceCard({ icon, title, tagline, description }: Servi
         <div className="w-14 h-14 bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl flex items-center justify-center text-amber-600 mb-6 group-hover:scale-110 transition-transform duration-500">
           {icon}
         </div>
-        <h3 className="text-xl font-bold text-navy-900 mb-3 font-display">{title}</h3>
+        <h3 className="text-xl font-semibold text-navy-900 mb-3">{title}</h3>
         {tagline && (
           <p className="text-navy-700 font-semibold text-[15px] mb-3">{tagline}</p>
         )}

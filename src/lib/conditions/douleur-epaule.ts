@@ -106,7 +106,7 @@ export const douleurEpaule: Condition = {
     {
       myth: "« Une rupture de la coiffe veut dire opération obligatoire. »",
       reality: [
-        "Pas dans la plupart des cas. Dans un essai randomisé auprès de personnes de plus de 55 ans avec une petite rupture du sus-épineux, non liée à un accident, le résultat de la kinésithérapie seule n'était pas différent de celui de la chirurgie, avec un suivi de plus de cinq ans. Une revue Cochrane est dans le même sens : la réparation chirurgicale n'apporte peut-être que peu de bénéfice par rapport au traitement sans opération, pour des déchirures surtout petites et dégénératives.",
+        "Pas forcément, mais les études ne vont pas toutes dans le même sens. Dans un essai randomisé auprès de personnes de plus de 55 ans avec une petite rupture du sus-épineux, non liée à un accident, le résultat de la kinésithérapie seule n'était pas différent de celui de la chirurgie, avec un suivi de plus de cinq ans. Une revue Cochrane est dans le même sens : la réparation chirurgicale n'apporte peut-être que peu de bénéfice par rapport au traitement sans opération, pour des déchirures surtout petites et dégénératives. À l'inverse, un autre essai suivi pendant 15 ans chez des personnes ayant une rupture petite à moyenne a trouvé de meilleurs résultats après réparation, même si une partie du groupe traité par kinésithérapie avait fini par être opérée.",
         "Ce n'est pas le cas de toutes les ruptures : une rupture brutale après un traumatisme, chez une personne jeune ou une rupture étendue, se discute différemment avec le chirurgien.",
       ],
     },
@@ -171,7 +171,7 @@ export const douleurEpaule: Condition = {
     {
       q: "Quand faut-il opérer : rupture de la coiffe, « conflit » ?",
       a: [
-        "Pour les petites ruptures dégénératives, souvent du sus-épineux, une revue Cochrane indique que la chirurgie n'apporte peut-être que peu de bénéfice par rapport aux exercices (certitude faible). Un essai auprès de personnes de plus de 55 ans l'a confirmé sur plus de cinq ans. Une rupture traumatique, étendue ou chez une personne jeune se discute avec le chirurgien, et on peut d'abord essayer plusieurs semaines de rééducation.",
+        "Pour les petites ruptures dégénératives, souvent du sus-épineux, une revue Cochrane indique que la chirurgie n'apporte peut-être que peu de bénéfice par rapport aux exercices (certitude faible). Un essai auprès de personnes de plus de 55 ans l'a confirmé sur plus de cinq ans, mais un autre essai suivi pendant 15 ans a trouvé de meilleurs résultats après réparation d'une rupture petite à moyenne : la littérature est partagée. Une rupture traumatique, étendue ou chez une personne jeune se discute avec le chirurgien, et on peut d'abord essayer plusieurs semaines de rééducation.",
         "Pour l'opération qui « fait de la place » (décompression sous-acromiale), les meilleures données disent non : dans l'essai CSAW elle n'a pas fait mieux qu'une arthroscopie sans le geste chirurgical, et dans FIMPACT, après 10 ans, elle n'a pas fait mieux que la fausse opération ni que l'exercice.",
       ],
     },
@@ -298,6 +298,11 @@ export const douleurEpaule: Condition = {
       citation:
         "Challoumas D, Biddle M, McLean M, Millar NL. Comparison of treatments for frozen shoulder: a systematic review and meta-analysis. JAMA Netw Open. 2020;3(12):e2029581.",
       pmid: "33326025",
+    },
+    {
+      citation:
+        "Moosmayer S, Lund G, Seljom US, et al. Fifteen-year results of a comparative analysis of tendon repair versus physiotherapy for small-to-medium-sized rotator cuff tears: a concise follow-up of previous reports. J Bone Joint Surg Am. 2024;106(19):1785-1796.",
+      pmid: "39197154",
     },
   ],
 };

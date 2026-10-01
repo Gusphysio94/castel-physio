@@ -1,114 +1,91 @@
 import type { Metadata } from "next";
-import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
-import SectionTitle from "@/components/ui/SectionTitle";
+import ArticleCard from "@/components/blog/ArticleCard";
+import CTABanner from "@/components/sections/CTABanner";
+import { articles } from "@/lib/articles";
+import { pageMetadata } from "@/lib/seo";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Blog",
+  title: "Blog : idées reçues sur la douleur et les blessures",
   description:
-    "Articles, résumés scientifiques et réflexions sur la kinésithérapie moderne par Augustin Castel.",
+    "Mal de dos, genou, tendon, épaule : des mini-articles clairs qui démontent les idées reçues, appuyés sur la science, par Augustin Castel, kiné du sport à Bruxelles.",
   path: "/blog",
 });
 
-const articles = [
-  {
-    slug: "approche-biopsychosociale-kinesitherapie",
-    title: "L'approche biopsychosociale en kinésithérapie : pourquoi c'est essentiel",
-    excerpt:
-      "Comprendre la douleur au-delà du modèle biomécanique pour une prise en charge plus complète et efficace.",
-    date: "15 mars 2026",
-    category: "Pratique clinique",
-    readTime: "6 min",
-  },
-  {
-    slug: "retour-sport-apres-lca",
-    title: "Retour au sport après reconstruction du LCA : les critères essentiels",
-    excerpt:
-      "Les critères objectifs et subjectifs à évaluer avant d'autoriser un retour au sport en toute sécurité.",
-    date: "8 mars 2026",
-    category: "Sport",
-    readTime: "8 min",
-  },
-  {
-    slug: "exercice-therapeutique-tendinopathie",
-    title: "Exercice thérapeutique et tendinopathie : que dit la science ?",
-    excerpt:
-      "Revue des dernières preuves scientifiques sur la prise en charge par l'exercice des tendinopathies.",
-    date: "1 mars 2026",
-    category: "Science",
-    readTime: "7 min",
-  },
-  {
-    slug: "education-patient-douleur-chronique",
-    title: "Éducation du patient et douleur chronique : guide pratique",
-    excerpt:
-      "Comment communiquer efficacement avec vos patients souffrant de douleur chronique pour améliorer les résultats.",
-    date: "22 février 2026",
-    category: "Pratique clinique",
-    readTime: "5 min",
-  },
-  {
-    slug: "charge-management-sport",
-    title: "Gestion de la charge en sport : principes et application",
-    excerpt:
-      "Les principes fondamentaux de la gestion de la charge d'entraînement pour la prévention des blessures.",
-    date: "15 février 2026",
-    category: "Sport",
-    readTime: "9 min",
-  },
-];
-
 export default function Blog() {
+  const myths = articles.filter((a) => a.kind === "mythe");
+  const guides = articles.filter((a) => a.audience === "patients" && a.kind !== "mythe");
+  const pros = articles.filter((a) => a.audience === "professionnels");
+
   return (
     <>
       {/* Hero */}
       <section className="bg-gradient-to-br from-navy-950 to-navy-900 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">
-            Blog
-          </p>
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Articles &amp; réflexions
+          <p className="text-amber-400 font-semibold text-sm uppercase tracking-[0.2em] mb-4">Blog</p>
+          <h1 className="font-display text-4xl md:text-5xl font-bold text-white mb-6">
+            Vrai ou faux ? Ce qu&apos;on croit sur la douleur
           </h1>
-          <p className="text-lg text-navy-200 max-w-2xl">
-            Résumés scientifiques, analyses cliniques et réflexions sur
-            la kinésithérapie moderne et evidence-based.
+          <p className="text-lg text-navy-200 max-w-2xl leading-relaxed">
+            Votre dos est « abîmé », votre cartilage « usé », il faut « tout arrêter » ? Des mini-articles de moins de cinq minutes
+            qui démontent les idées reçues, avec ce que dit réellement la science.
           </p>
         </div>
       </section>
 
-      {/* Articles */}
-      <section className="py-20 md:py-28">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8">
-            {articles.map((article) => (
-              <Link
-                key={article.slug}
-                href={`/blog/${article.slug}`}
-                className="block group"
-              >
-                <article className="bg-white rounded-2xl border border-navy-100 p-8 hover:shadow-lg hover:border-amber-200 transition-all duration-300">
-                  <div className="flex flex-wrap items-center gap-3 mb-3">
-                    <span className="px-3 py-1 text-xs font-semibold bg-amber-50 text-amber-700 rounded-full">
-                      {article.category}
-                    </span>
-                    <span className="text-sm text-navy-400">{article.date}</span>
-                    <span className="text-sm text-navy-400">·</span>
-                    <span className="text-sm text-navy-400">{article.readTime} de lecture</span>
-                  </div>
-                  <h2 className="text-xl font-bold text-navy-900 mb-2 group-hover:text-amber-600 transition-colors">
-                    {article.title}
-                  </h2>
-                  <span className="inline-block px-3 py-1 text-xs font-semibold bg-navy-100 text-navy-500 rounded-full mb-3">
-                    À venir
-                  </span>
-                  <p className="text-navy-600 leading-relaxed">{article.excerpt}</p>
-                </article>
-              </Link>
-            ))}
+      {/* Mythes et réalités */}
+      {myths.length > 0 && (
+        <section className="py-16 md:py-24">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 mb-2">Mythes et réalités</p>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-900 mb-8">Les idées reçues les plus courantes</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {myths.map((a) => (
+                <ArticleCard key={a.slug} article={a} />
+              ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
+      )}
+
+      {/* Guides complets */}
+      {guides.length > 0 && (
+        <section className="py-16 md:py-20 bg-navy-50/50">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 mb-2">Guides complets</p>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-900 mb-8">Quand ça vous arrive : que faire ?</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {guides.map((a) => (
+                <ArticleCard key={a.slug} article={a} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      {/* Articles pour les professionnels */}
+      {pros.length > 0 && (
+        <section className="py-16 md:py-20">
+          <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="flex flex-col md:flex-row md:items-end md:justify-between gap-3 mb-8">
+              <div>
+                <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 mb-2">Pour les professionnels</p>
+                <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-900">Vous êtes kinésithérapeute ?</h2>
+              </div>
+              <Link href="/formations" className="text-sm font-medium text-amber-600 underline underline-offset-4 hover:text-amber-500">
+                Découvrir mes formations →
+              </Link>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {pros.map((a) => (
+                <ArticleCard key={a.slug} article={a} />
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
+      <CTABanner />
     </>
   );
 }

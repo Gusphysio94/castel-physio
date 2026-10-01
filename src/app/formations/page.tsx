@@ -62,7 +62,7 @@ export default function FormationsPage() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-navy-950 to-navy-900 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">
+          <p className="text-amber-400 font-semibold text-sm uppercase tracking-[0.2em] mb-4">
             Formations
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -86,7 +86,7 @@ export default function FormationsPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-navy-900 mb-2">Evidence-based</h3>
+              <h3 className="font-semibold text-navy-900 mb-2">Evidence-based</h3>
               <p className="text-sm text-navy-600">Contenu basé sur les dernières publications scientifiques</p>
             </div>
             <div>
@@ -95,7 +95,7 @@ export default function FormationsPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-navy-900 mb-2">Directement applicable</h3>
+              <h3 className="font-semibold text-navy-900 mb-2">Directement applicable</h3>
               <p className="text-sm text-navy-600">Des outils et concepts utilisables dès le lendemain en clinique</p>
             </div>
             <div>
@@ -104,7 +104,7 @@ export default function FormationsPage() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M12 4.354a4 4 0 110 5.292M15 21H3v-1a6 6 0 0112 0v1zm0 0h6v-1a6 6 0 00-9-5.197M13 7a4 4 0 11-8 0 4 4 0 018 0z" />
                 </svg>
               </div>
-              <h3 className="font-bold text-navy-900 mb-2">Par un clinicien</h3>
+              <h3 className="font-semibold text-navy-900 mb-2">Par un clinicien</h3>
               <p className="text-sm text-navy-600">Créé par un praticien qui comprend vos réalités quotidiennes</p>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function FormationsPage() {
                         {formation.tag}
                       </span>
                     </div>
-                    <h3 className="text-xl md:text-2xl font-bold text-navy-900 mb-4">
+                    <h3 className="text-xl md:text-2xl font-semibold text-navy-900 mb-4">
                       {formation.title}
                     </h3>
                     <p className="text-navy-600 leading-relaxed mb-6 max-w-3xl">
@@ -152,7 +152,7 @@ export default function FormationsPage() {
                       href={formation.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide transition-all duration-300 cursor-pointer btn-magnetic bg-gradient-to-r from-amber-500 to-amber-400 text-navy-950 shadow-[0_4px_20px_rgba(245,158,11,0.3)] hover:shadow-[0_8px_30px_rgba(245,158,11,0.4)] hover:from-amber-400 hover:to-amber-300"
+                      className="inline-flex items-center justify-center px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide transition-all duration-300 cursor-pointer btn-magnetic bg-gradient-to-r from-amber-500 to-amber-400 text-navy-950 shadow-[0_4px_20px_rgba(255,87,87,0.3)] hover:shadow-[0_8px_30px_rgba(255,87,87,0.4)] hover:from-amber-400 hover:to-amber-300"
                     >
                       En savoir plus
                       <svg className="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">

@@ -39,7 +39,7 @@ export default function FirstVisit() {
             <ScrollReveal key={s.title} animation="reveal-up" delay={i * 100}>
               <li className="relative h-full rounded-2xl bg-white border border-navy-100 p-6">
                 <span className="font-display text-4xl font-bold text-amber-200">{String(i + 1).padStart(2, "0")}</span>
-                <h3 className="mt-2 mb-2 text-lg font-bold text-navy-900">{s.title}</h3>
+                <h3 className="mt-2 mb-2 text-lg font-semibold text-navy-900">{s.title}</h3>
                 <p className="text-sm text-navy-600 leading-relaxed">{s.text}</p>
               </li>
             </ScrollReveal>

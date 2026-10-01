@@ -41,7 +41,7 @@ export default function About() {
                     </svg>
                   </div>
                   <div>
-                    <p className="text-xs font-bold text-navy-900">Evidence-based</p>
+                    <p className="text-xs font-semibold text-navy-900">Evidence-based</p>
                     <p className="text-[10px] text-navy-400">Pratique scientifique</p>
                   </div>
                 </div>

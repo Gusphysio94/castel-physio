@@ -40,7 +40,7 @@ export default function ServiceFlipCard({ icon, title, tagline, description, ima
           <div className="w-14 h-14 bg-gradient-to-br from-amber-50 to-amber-100/50 rounded-2xl flex items-center justify-center text-amber-600 mb-6">
             {icon}
           </div>
-          <h3 className="text-xl font-bold text-navy-900 mb-3 font-display">{title}</h3>
+          <h3 className="text-xl font-semibold text-navy-900 mb-3">{title}</h3>
           {tagline && (
             <p className="text-navy-700 font-semibold text-[15px] mb-3">{tagline}</p>
           )}
@@ -65,7 +65,7 @@ export default function ServiceFlipCard({ icon, title, tagline, description, ima
           />
           <div className="absolute inset-0 bg-gradient-to-t from-navy-950/60 via-transparent to-transparent" />
           <div className="absolute bottom-0 left-0 right-0 p-5">
-            <h3 className="text-lg font-bold text-white font-display drop-shadow-lg">
+            <h3 className="text-lg font-semibold text-white drop-shadow-lg">
               {title}
             </h3>
           </div>

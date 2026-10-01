@@ -85,7 +85,7 @@ export default function Contact() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-navy-950 to-navy-900 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">
+          <p className="text-amber-400 font-semibold text-sm uppercase tracking-[0.2em] mb-4">
             Contact
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -110,12 +110,12 @@ export default function Contact() {
               </div>
               <h2 className="text-2xl font-bold text-navy-900 mb-6">Envoyez-moi un message</h2>
               {submitted ? (
-                <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
-                  <svg className="w-12 h-12 text-green-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <div className="bg-navy-50 border border-navy-100 rounded-2xl p-8 text-center">
+                  <svg className="w-12 h-12 text-amber-500 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                   </svg>
-                  <p className="text-green-800 font-semibold text-lg">Message envoyé !</p>
-                  <p className="text-green-700 mt-2">Je vous répondrai dans les plus brefs délais.</p>
+                  <p className="text-navy-900 font-semibold text-lg">Message envoyé !</p>
+                  <p className="text-navy-600 mt-2">Je vous répondrai dans les plus brefs délais.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
@@ -188,7 +188,7 @@ export default function Contact() {
                     />
                   </div>
                   {error && (
-                    <p className="text-red-600 text-sm">
+                    <p className="text-amber-700 text-sm">
                       Une erreur est survenue. Veuillez réessayer ou envoyer un email directement à castelphysio94@gmail.com.
                     </p>
                   )}

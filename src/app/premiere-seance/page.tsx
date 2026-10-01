@@ -121,7 +121,7 @@ export default function PremiereSeance() {
                   {String(i + 1).padStart(2, "0")}
                 </span>
                 <div>
-                  <h3 className="text-lg font-bold text-navy-900 mb-2">{s.title}</h3>
+                  <h3 className="text-lg font-semibold text-navy-900 mb-2">{s.title}</h3>
                   <p className="text-navy-600 leading-relaxed">{s.text}</p>
                 </div>
               </li>

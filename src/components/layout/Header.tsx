@@ -42,7 +42,7 @@ export default function Header() {
               <span className={`font-bold text-lg tracking-tight transition-colors duration-300 ${scrolled ? "text-navy-900" : "text-white"}`}>
                 Castel
               </span>
-              <span className="font-bold text-lg tracking-tight text-amber-500"> Physio</span>
+              <span className="font-semibold text-lg tracking-tight text-amber-500"> Physio</span>
             </div>
           </Link>
 

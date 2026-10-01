@@ -22,7 +22,7 @@ export default function MobileBookingBar() {
           rel="noopener noreferrer"
           data-umami-event="rdv-click"
           data-umami-event-source="mobile-bar"
-          className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 px-4 py-3 text-sm font-bold text-navy-950 shadow-[0_4px_20px_rgba(245,158,11,0.3)]"
+          className="inline-flex items-center justify-center rounded-xl bg-gradient-to-r from-amber-500 to-amber-400 px-4 py-3 text-sm font-bold text-navy-950 shadow-[0_4px_20px_rgba(255,87,87,0.3)]"
         >
           Prendre rendez-vous
         </a>

@@ -21,7 +21,7 @@ export default function Button({
 
   const variants = {
     primary:
-      "bg-gradient-to-r from-amber-500 to-amber-400 text-navy-950 shadow-[0_4px_20px_rgba(245,158,11,0.3)] hover:shadow-[0_8px_30px_rgba(245,158,11,0.4)] hover:from-amber-400 hover:to-amber-300",
+      "bg-gradient-to-r from-amber-500 to-amber-400 text-navy-950 shadow-[0_4px_20px_rgba(255,87,87,0.3)] hover:shadow-[0_8px_30px_rgba(255,87,87,0.4)] hover:from-amber-400 hover:to-amber-300",
     secondary:
       "bg-navy-800 text-white hover:bg-navy-700 shadow-lg hover:shadow-xl",
     outline:

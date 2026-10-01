@@ -5,9 +5,9 @@ import { allPages } from "@/lib/conditions";
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://castel-physio.com";
 
-  const articleEntries: MetadataRoute.Sitemap = Object.entries(articles).map(
-    ([slug, article]) => ({
-      url: `${baseUrl}/blog/${slug}`,
+  const articleEntries: MetadataRoute.Sitemap = articles.map(
+    (article) => ({
+      url: `${baseUrl}/blog/${article.slug}`,
       lastModified: new Date(article.isoDate),
       changeFrequency: "yearly",
       priority: 0.6,

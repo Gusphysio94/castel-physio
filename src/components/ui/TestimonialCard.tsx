@@ -24,7 +24,7 @@ export default function TestimonialCard({ quote, name, role }: TestimonialCardPr
 
         <div className="flex items-center gap-3 pt-5 border-t border-navy-100/60">
           <div className="w-10 h-10 bg-gradient-to-br from-navy-200 to-navy-300 rounded-full flex items-center justify-center">
-            <span className="text-navy-600 font-bold text-xs">{name.split(" ").map(n => n[0]).join("")}</span>
+            <span className="text-navy-600 font-semibold text-xs">{name.split(" ").map(n => n[0]).join("")}</span>
           </div>
           <div>
             <p className="font-semibold text-navy-900 text-sm">{name}</p>

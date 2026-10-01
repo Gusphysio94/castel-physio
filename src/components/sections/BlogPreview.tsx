@@ -64,7 +64,7 @@ export default function BlogPreview() {
                     </div>
                     {/* Category badge */}
                     <div className="absolute top-4 left-4">
-                      <span className="px-3 py-1 text-[11px] font-bold uppercase tracking-wider bg-white/90 backdrop-blur-sm text-amber-700 rounded-full">
+                      <span className="px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.2em] bg-white/90 backdrop-blur-sm text-amber-700 rounded-full">
                         {article.category}
                       </span>
                     </div>
@@ -76,7 +76,7 @@ export default function BlogPreview() {
                       <span>&middot;</span>
                       <span>{article.readTime}</span>
                     </div>
-                    <h3 className="font-bold text-navy-900 mb-2 group-hover:text-amber-600 transition-colors duration-300 leading-snug font-display flex-1">
+                    <h3 className="font-semibold text-navy-900 mb-2 group-hover:text-amber-600 transition-colors duration-300 leading-snug flex-1">
                       {article.title}
                     </h3>
                     <p className="text-sm text-navy-500 leading-relaxed">

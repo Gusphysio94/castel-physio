@@ -36,7 +36,7 @@ export default function APropos() {
       {/* Hero */}
       <section className="bg-gradient-to-br from-navy-950 to-navy-900 py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-4">
+          <p className="text-amber-400 font-semibold text-sm uppercase tracking-[0.2em] mb-4">
             À propos
           </p>
           <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
@@ -107,7 +107,7 @@ export default function APropos() {
       <section className="py-20 md:py-28 bg-navy-50/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-2xl mx-auto text-center mb-16">
-            <p className="text-sm font-semibold uppercase tracking-widest text-amber-600 mb-3">
+            <p className="text-sm font-semibold uppercase tracking-[0.2em] text-amber-600 mb-3">
               Philosophie
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-navy-900">
@@ -117,7 +117,7 @@ export default function APropos() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {values.map((value) => (
               <div key={value.title} className="bg-white rounded-2xl p-8 border border-navy-100">
-                <h3 className="text-xl font-bold text-navy-900 mb-3">{value.title}</h3>
+                <h3 className="text-xl font-semibold text-navy-900 mb-3">{value.title}</h3>
                 <p className="text-navy-600 leading-relaxed">{value.description}</p>
               </div>
             ))}
