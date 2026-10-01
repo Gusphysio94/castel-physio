@@ -64,8 +64,11 @@ export const metadata: Metadata = {
     description:
       "Kinésithérapie du sport, coaching sportif et formations pour professionnels. Approche moderne, personnalisée et evidence-based à Bruxelles.",
   },
-  alternates: {
-    canonical: "https://castel-physio.com",
+  twitter: {
+    card: "summary_large_image",
+    title: "Augustin Castel — Kinésithérapeute du sport à Bruxelles",
+    description:
+      "Kinésithérapie du sport, coaching sportif et formations pour professionnels. Approche moderne, personnalisée et evidence-based à Bruxelles.",
   },
   verification: {
     google: "8FkGCR_XFJYyf9ewQIXyoT5tZtTr2nyQJg3E7ivg0Jc",

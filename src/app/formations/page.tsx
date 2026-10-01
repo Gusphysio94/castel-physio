@@ -1,13 +1,15 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Image from "next/image";
 import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Formations pour kinésithérapeutes — Tendinopathie, Kinéathlétisation",
   description:
     "Formations e-learning par Augustin Castel : Tendinopathie 2.0, Kinéathlétisation, Tendinopathie d'Achille 2.0. Contenu evidence-based pour professionnels de santé.",
-};
+  path: "/formations",
+});
 
 const formations = [
   {

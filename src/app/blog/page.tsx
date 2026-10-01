@@ -1,12 +1,14 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 import Link from "next/link";
 import SectionTitle from "@/components/ui/SectionTitle";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Blog",
   description:
     "Articles, résumés scientifiques et réflexions sur la kinésithérapie moderne par Augustin Castel.",
-};
+  path: "/blog",
+});
 
 const articles = [
   {

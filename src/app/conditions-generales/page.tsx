@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Conditions générales",
-  description: "Conditions générales d'utilisation du site et des services de Castel Physio.",
-};
+  description:
+    "Conditions générales d'utilisation du site et des services de Castel Physio.",
+  path: "/conditions-generales",
+});
 
 export default function ConditionsGenerales() {
   return (

@@ -1,9 +1,12 @@
 import type { Metadata } from "next";
+import { pageMetadata } from "@/lib/seo";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité",
-  description: "Politique de confidentialité et protection des données personnelles du site Castel Physio.",
-};
+  description:
+    "Politique de confidentialité et protection des données personnelles du site Castel Physio.",
+  path: "/politique-confidentialite",
+});
 
 export default function PolitiqueConfidentialite() {
   return (

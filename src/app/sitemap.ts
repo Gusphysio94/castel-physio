@@ -1,7 +1,17 @@
 import type { MetadataRoute } from "next";
+import { articles } from "@/lib/articles";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://castel-physio.com";
+
+  const articleEntries: MetadataRoute.Sitemap = Object.entries(articles).map(
+    ([slug, article]) => ({
+      url: `${baseUrl}/blog/${slug}`,
+      lastModified: new Date(article.isoDate),
+      changeFrequency: "yearly",
+      priority: 0.6,
+    })
+  );
 
   return [
     {
@@ -40,6 +50,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "weekly",
       priority: 0.7,
     },
+    ...articleEntries,
     {
       url: `${baseUrl}/mentions-legales`,
       lastModified: new Date(),
