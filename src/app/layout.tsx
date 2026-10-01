@@ -153,10 +153,15 @@ export default function RootLayout({
                 closes: "19:00",
               },
               priceRange: "€€",
-              areaServed: {
-                "@type": "City",
-                name: "Bruxelles",
-              },
+              areaServed: [
+                "Woluwe-Saint-Lambert",
+                "Woluwe-Saint-Pierre",
+                "Etterbeek",
+                "Auderghem",
+                "Schaerbeek",
+                "Evere",
+                "Bruxelles",
+              ].map((name) => ({ "@type": "City", name })),
               inLanguage: "fr",
             }),
           }}

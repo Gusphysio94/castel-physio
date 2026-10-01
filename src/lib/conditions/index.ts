@@ -31,7 +31,7 @@ export const localPage: Condition = {
     "Cabinet de kiné du sport au Centre ASPIS, Avenue Jacques Brel 34, 1200 Woluwe-Saint-Lambert. Rendez-vous en ligne ou par téléphone, téléconsultation possible.",
   h1: "Kinésithérapeute du sport à Woluwe-Saint-Lambert",
   lead:
-    "Je reçois mes patients au Centre ASPIS, à Woluwe-Saint-Lambert, pour des soins de kinésithérapie du sport : blessures du sportif, douleurs musculo-squelettiques et rééducation après opération.",
+    "Je reçois mes patients au Centre ASPIS, à Woluwe-Saint-Lambert (Woluwe, Sint-Lambrechts-Woluwe en néerlandais), aux portes de Woluwe-Saint-Pierre, pour des soins de kinésithérapie du sport : blessures du sportif, douleurs musculo-squelettiques et rééducation après opération.",
   subtypeGroups: [
     {
       heading: "Ce que je prends en charge",
@@ -45,7 +45,7 @@ export const localPage: Condition = {
     {
       heading: "Le cabinet",
       paragraphs: [
-        "Centre ASPIS, Avenue Jacques Brel 34, 1200 Bruxelles (Woluwe-Saint-Lambert). Le cabinet est facilement accessible depuis les communes voisines : Woluwe-Saint-Pierre, Etterbeek, Auderghem, Schaerbeek et Evere.",
+        "Centre ASPIS, Avenue Jacques Brel 34, 1200 Bruxelles, à Woluwe-Saint-Lambert. Que vous habitiez ou travailliez à Woluwe-Saint-Lambert, à Woluwe-Saint-Pierre ou dans les communes voisines (Etterbeek, Auderghem, Schaerbeek, Evere), le cabinet est facile à rejoindre.",
       ],
     },
     {
