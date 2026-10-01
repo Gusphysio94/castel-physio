@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import BookingButton from "@/components/ui/BookingButton";
 import CTABanner from "@/components/sections/CTABanner";
+import LoadCapacityDiagram from "@/components/LoadCapacityDiagram";
 import { allPages, getCondition } from "@/lib/conditions";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { SITE_URL, pageMetadata } from "@/lib/seo";
@@ -205,6 +206,7 @@ export default async function ConditionPage({ params }: Props) {
                   </div>
                 </div>
               ))}
+            {condition.diagram === "charge-capacite" && <LoadCapacityDiagram />}
             </div>
           </div>
         </section>

@@ -6,6 +6,7 @@ import { conditions } from "@/lib/conditions";
 const teasers: Record<string, string> = {
   tendinopathie: "Achille, rotule, épaule, coude, hanche…",
   "reeducation-lca": "Rupture ou reconstruction du ligament croisé",
+  "blessures-course-a-pied": "Genou du coureur, tibia, tendon d'Achille, fascia plantaire",
   "entorse-cheville": "Entorse de cheville ou du pied, cheville instable",
   "douleur-epaule": "Coiffe des rotateurs, épaule gelée, instabilité",
   "douleur-genou": "Rotule, ménisque, arthrose, bandelette",

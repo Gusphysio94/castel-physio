@@ -66,7 +66,7 @@ Pour une douleur de tendon, la logique est la même : voir la page [tendinopathi
 
 ## Le renforcement protège-t-il vraiment ?
 
-C'est l'un des rares points où la recherche est assez nette. Une méta-analyse d'essais randomisés (Lauersen et collègues, 2018) a trouvé que les programmes de renforcement musculaire diminuaient fortement le risque de blessures de sport, d'environ un tiers du risque initial dans les essais analysés. Une revue précédente du même groupe arrivait à une conclusion similaire, avec peu de bénéfice pour les étirements seuls.
+C'est l'un des rares points où la recherche est assez nette. Une méta-analyse d'essais randomisés (Lauersen et collègues, 2018) a trouvé que les programmes de renforcement musculaire diminuaient fortement le risque de blessures de sport : dans les essais analysés, le risque était ramené à environ un tiers de son niveau initial, soit près de deux tiers de blessures en moins. Ces essais portaient sur des sportifs en général, pas sur les coureurs seuls. Une revue précédente du même groupe arrivait à une conclusion similaire, avec peu de bénéfice pour les étirements seuls.
 
 Deux nuances : le nombre d'essais est limité (six dans l'analyse de 2018), et les programmes testés étaient variés. Il ne faut donc pas lire le chiffre comme une garantie individuelle. Mais le message est cohérent avec la logique de la balance : plus la capacité est grande, moins une charge donnée la dépasse. Un entretien de force régulier après la rééducation a du sens.
 

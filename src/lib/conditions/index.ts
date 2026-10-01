@@ -3,6 +3,7 @@ import { cervicalgie } from "./cervicalgie";
 import { douleurEpaule } from "./douleur-epaule";
 import { douleurGenou } from "./douleur-genou";
 import { tendinopathie } from "./tendinopathie";
+import { blessuresCourseAPied } from "./blessures-course-a-pied";
 import { entorseCheville } from "./entorse-cheville";
 import { lombalgie } from "./lombalgie";
 import { reeducationLca } from "./reeducation-lca";
@@ -13,6 +14,7 @@ export type { Condition } from "./types";
 /** Pathologies, dans l'ordre d'affichage de la page /kinesitherapie */
 export const conditions: Condition[] = [
   tendinopathie,
+  blessuresCourseAPied,
   reeducationLca,
   entorseCheville,
   douleurEpaule,
