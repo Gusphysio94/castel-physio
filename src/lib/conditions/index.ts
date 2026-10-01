@@ -49,6 +49,17 @@ export const localPage: Condition = {
       ],
     },
     {
+      heading: "Comment venir",
+      paragraphs: [
+        "Le cabinet est à environ 5 minutes à pied de la station de métro Roodebeek.",
+      ],
+      list: [
+        "En métro : ligne 1, arrêt Roodebeek",
+        "En tram : ligne 8, arrêt Roodebeek",
+        "En bus : lignes 29, 42 et 45, arrêts Charmille ou Roodebeek",
+      ],
+    },
+    {
       heading: "Pour qui ?",
       paragraphs: [
         "Pour les sportifs de tous niveaux, coureurs, joueurs de sports collectifs, pratiquants de loisir, mais aussi pour toute personne qui souffre du dos, d'une articulation ou d'un tendon et souhaite une prise en charge active, basée sur les preuves scientifiques.",
@@ -65,7 +76,13 @@ export const localPage: Condition = {
   myths: [],
   care: [],
   faq: [
-    { q: "Où se trouve votre cabinet ?", a: ["Au Centre ASPIS, Avenue Jacques Brel 34, 1200 Bruxelles, à Woluwe-Saint-Lambert."] },
+    {
+      q: "Où se trouve votre cabinet et comment y aller ?",
+      a: [
+        "Au Centre ASPIS, Avenue Jacques Brel 34, 1200 Bruxelles, à Woluwe-Saint-Lambert, à environ 5 minutes à pied de la station de métro Roodebeek.",
+        "En transports en commun : métro ligne 1 et tram 8 (arrêt Roodebeek), bus 29, 42 et 45 (arrêts Charmille ou Roodebeek).",
+      ],
+    },
     { q: "Faut-il une prescription pour consulter ?", a: ["Pour un remboursement par la mutuelle, oui, une prescription médicale est requise."] },
     { q: "Comment prendre rendez-vous ?", a: ["En ligne via Q-Top depuis le site, ou par téléphone au +32 497 23 38 58."] },
     { q: "Proposez-vous la téléconsultation ?", a: ["Oui, pour les bilans de progression, l'ajustement du programme et le suivi entre deux séances au cabinet."] },
