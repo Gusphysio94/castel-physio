@@ -169,7 +169,7 @@ export default async function BlogPost({ params }: Props) {
                       <span>{f.q}</span>
                       <span aria-hidden className="text-amber-500 text-2xl leading-none transition-transform group-open:rotate-45">+</span>
                     </summary>
-                    <p className="px-5 pb-5 text-navy-600 leading-relaxed">{f.a}</p>
+                    <p className="px-5 pb-5 text-navy-600 leading-relaxed text-justify hyphens-auto">{f.a}</p>
                   </details>
                 ))}
               </div>

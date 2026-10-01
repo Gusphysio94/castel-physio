@@ -55,6 +55,18 @@ html {
   }
 }
 
+/* ─── Texte courant justifié ───
+   Paragraphes, listes et citations du contenu principal sont justifiés (avec césure
+   automatique en français pour éviter les grands blancs). Exceptions : tout ce qui est
+   centré ou aligné explicitement (text-center / text-left / text-right, y compris les
+   éléments qu'ils contiennent) et les petits intitulés en majuscules. */
+@layer base {
+  main :where(p, li, blockquote):not(.uppercase, .text-center, .text-center *, .text-left, .text-left *, .text-right, .text-right *) {
+    text-align: justify;
+    hyphens: auto;
+  }
+}
+
 /* ─── Display font for headings ─── */
 .font-display {
   font-family: var(--font-display), Georgia, serif;

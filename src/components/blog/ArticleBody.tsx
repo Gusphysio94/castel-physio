@@ -30,16 +30,16 @@ export default function ArticleBody({ content }: { content: string }) {
   const blocks = content.split(/\n{2,}/).map((b) => b.trim()).filter(Boolean);
 
   return (
-    <div className="space-y-5 text-navy-700 leading-relaxed text-[17px]">
+    <div className="space-y-5 text-navy-700 leading-relaxed text-[17px] text-justify hyphens-auto">
       {blocks.map((block, i) => {
         const key = `b${i}`;
         if (block.startsWith("### ")) {
-          return <h3 key={key} className="text-xl font-semibold text-navy-900 mt-8">{renderInline(block.slice(4), key)}</h3>;
+          return <h3 key={key} className="text-xl font-semibold text-navy-900 mt-8 text-left">{renderInline(block.slice(4), key)}</h3>;
         }
         if (block.startsWith("## ")) {
           const text = block.slice(3).trim();
           return (
-            <h2 key={key} id={slugifyHeading(text)} className="scroll-mt-24 font-display text-2xl md:text-3xl font-bold text-navy-900 mt-12 mb-1">
+            <h2 key={key} id={slugifyHeading(text)} className="scroll-mt-24 font-display text-2xl md:text-3xl font-bold text-navy-900 mt-12 mb-1 text-left">
               {text}
             </h2>
           );

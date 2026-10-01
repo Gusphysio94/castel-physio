@@ -68,7 +68,7 @@ export function MythHero({ myth }: { myth: MythMeta }) {
 
         <div className="rounded-2xl border border-navy-100 bg-white p-5 md:p-6">
           <p className={`${eyebrow} text-amber-600 mb-2`}>Pourquoi on y croit</p>
-          <p className="text-navy-700 leading-relaxed">{myth.whyBelieved}</p>
+          <p className="text-navy-700 leading-relaxed text-justify hyphens-auto">{myth.whyBelieved}</p>
         </div>
       </div>
     </section>
