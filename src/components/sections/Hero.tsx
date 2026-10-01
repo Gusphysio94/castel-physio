@@ -1,5 +1,8 @@
 import Image from "next/image";
-import Button from "@/components/ui/Button";
+import Link from "next/link";
+import BookingButton from "@/components/ui/BookingButton";
+import TrustBadge from "@/components/ui/TrustBadge";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 export default function Hero() {
   return (
@@ -51,18 +54,33 @@ export default function Hero() {
 
             {/* Subheadline */}
             <p className="animate-reveal-up delay-200 text-lg md:text-xl text-navy-300 leading-relaxed mb-12 max-w-xl">
-              Augustin Castel, kinésithérapeute du sport.
+              Augustin Castel, kinésithérapeute du sport à Bruxelles (Woluwe-Saint-Lambert).
               Une prise en charge individualisée, basée sur les dernières preuves scientifiques.
             </p>
 
             {/* CTAs */}
-            <div className="animate-reveal-up delay-300 flex flex-col sm:flex-row gap-4">
-              <Button href="https://www.q-top.be/online-planner-v2/FR/?root=kq46938" variant="primary">
-                Prendre rendez-vous
-              </Button>
-              <Button href="/formations" variant="outline" className="border-navy-500 text-white hover:bg-white/10 hover:border-navy-300">
-                Découvrir les formations
-              </Button>
+            <div className="animate-reveal-up delay-300">
+              <div className="flex flex-col sm:flex-row sm:items-center gap-4">
+                <BookingButton source="hero" />
+                <a
+                  href={`tel:${PHONE_TEL}`}
+                  data-umami-event="tel-click"
+                  data-umami-event-source="hero"
+                  className="inline-flex items-center justify-center px-2 py-3 text-sm font-medium text-navy-200 hover:text-amber-300 transition-colors"
+                >
+                  ou appelez le {PHONE_DISPLAY}
+                </a>
+              </div>
+              <p className="mt-4 text-sm text-navy-400">Réservation en ligne, simple et rapide.</p>
+              <div className="mt-7">
+                <TrustBadge tone="dark" />
+              </div>
+              <p className="mt-8 text-sm text-navy-400">
+                Vous êtes kinésithérapeute ?{" "}
+                <Link href="/formations" className="text-navy-200 underline underline-offset-4 hover:text-amber-300">
+                  Découvrir les formations
+                </Link>
+              </p>
             </div>
 
           </div>

@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import type { FormEvent } from "react";
+import BookingButton from "@/components/ui/BookingButton";
+import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 const contactInfo = [
   {
@@ -32,6 +34,16 @@ const contactInfo = [
     label: "Horaires",
     value: "Lundi — Vendredi : 8h — 19h",
     detail: "Sur rendez-vous uniquement",
+  },
+  {
+    icon: (
+      <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+      </svg>
+    ),
+    label: "Téléphone",
+    value: PHONE_DISPLAY,
+    href: `tel:${PHONE_TEL}`,
   },
 ];
 
@@ -91,6 +103,11 @@ export default function Contact() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
             {/* Contact form */}
             <div>
+              <div className="mb-10 rounded-2xl bg-amber-50 border border-amber-200 p-6">
+                <p className="font-semibold text-navy-900 mb-1">Pour un rendez-vous, le plus rapide est de réserver en ligne.</p>
+                <p className="text-sm text-navy-600 mb-4">Vous pouvez aussi m&apos;appeler au {PHONE_DISPLAY}. Le formulaire ci-dessous est pour vos questions.</p>
+                <BookingButton source="contact" />
+              </div>
               <h2 className="text-2xl font-bold text-navy-900 mb-6">Envoyez-moi un message</h2>
               {submitted ? (
                 <div className="bg-green-50 border border-green-200 rounded-2xl p-8 text-center">
@@ -197,7 +214,13 @@ export default function Contact() {
                     </div>
                     <div>
                       <p className="font-semibold text-navy-900">{info.label}</p>
-                      <p className="text-navy-600">{info.value}</p>
+                      {info.href ? (
+                        <a href={info.href} data-umami-event="tel-click" data-umami-event-source="contact" className="text-navy-600 hover:text-amber-600 underline underline-offset-4">
+                          {info.value}
+                        </a>
+                      ) : (
+                        <p className="text-navy-600">{info.value}</p>
+                      )}
                       {info.detail && (
                         <p className="text-sm text-navy-400 mt-1">{info.detail}</p>
                       )}

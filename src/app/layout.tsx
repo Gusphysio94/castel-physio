@@ -3,6 +3,8 @@ import { Geist } from "next/font/google";
 import { Playfair_Display } from "next/font/google";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import MobileBookingBar from "@/components/layout/MobileBookingBar";
+import Analytics from "@/components/Analytics";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://castel-physio.com"),
   title: {
     default: "Augustin Castel — Kinésithérapeute du sport à Bruxelles | Castel Physio",
-    template: "%s | Castel Physio — Augustin Castel",
+    template: "%s | Castel Physio",
   },
   description:
     "Augustin Castel, kinésithérapeute du sport à Bruxelles. Consultations au cabinet, téléconsultation, coaching sportif individualisé et formations pour professionnels de santé. Approche evidence-based, personnalisée et orientée résultats.",
@@ -91,7 +93,8 @@ export default function RootLayout({
               "@type": "HealthBusiness",
               "@id": "https://castel-physio.com",
               name: "Castel Physio",
-              alternateName: "Augustin Castel Kinésithérapeute",
+              alternateName: "Augustin Castel - Kinésithérapeute du sport",
+              image: "https://castel-physio.com/images/augustin-castel.jpg",
               description: "Cabinet de kinésithérapie du sport à Bruxelles. Consultations, téléconsultation, coaching sportif et formations pour professionnels de santé.",
               url: "https://castel-physio.com",
               telephone: "+32497233858",
@@ -106,8 +109,8 @@ export default function RootLayout({
               },
               geo: {
                 "@type": "GeoCoordinates",
-                latitude: 50.85,
-                longitude: 4.4,
+                latitude: 50.84999,
+                longitude: 4.4347,
               },
               founder: {
                 "@type": "Person",
@@ -163,6 +166,9 @@ export default function RootLayout({
         <Header />
         <main className="flex-1 pt-16 md:pt-20">{children}</main>
         <Footer />
+        <div className="md:hidden h-[72px] bg-navy-950" aria-hidden />
+        <MobileBookingBar />
+        <Analytics />
       </body>
     </html>
   );

@@ -1,4 +1,4 @@
-export type Article = { title: string; date: string; isoDate: string; category: string; readTime: string; content: string };
+export type Article = { title: string; date: string; isoDate: string; category: string; readTime: string; content: string; related?: { href: string; label: string }[] };
 
 // Placeholder blog data — will be replaced by MDX/CMS later
 export const articles: Record<string, Article> = {
@@ -6,6 +6,7 @@ export const articles: Record<string, Article> = {
     title: "L'approche biopsychosociale en kinésithérapie : pourquoi c'est essentiel",
     date: "15 mars 2026",
     isoDate: "2026-03-15",
+    related: [{ href: "/kinesitherapie/lombalgie", label: "Lombalgie : retrouver un dos solide et rester actif" }],
     category: "Pratique clinique",
     readTime: "6 min",
     content: `Le modèle biopsychosocial reconnaît que la douleur et le handicap sont influencés par des facteurs biologiques, psychologiques et sociaux. En kinésithérapie, adopter cette approche signifie aller au-delà de la simple évaluation biomécanique pour comprendre le patient dans sa globalité.
@@ -29,6 +30,7 @@ L'approche biopsychosociale n'est pas une option, c'est une nécessité pour une
     title: "Retour au sport après reconstruction du LCA : les critères essentiels",
     date: "8 mars 2026",
     isoDate: "2026-03-08",
+    related: [{ href: "/kinesitherapie/reeducation-lca", label: "Rééducation du LCA au cabinet" }],
     category: "Sport",
     readTime: "8 min",
     content: `Le retour au sport après une reconstruction du ligament croisé antérieur (LCA) est un processus complexe qui nécessite une évaluation rigoureuse. Voici les critères essentiels à considérer.
@@ -53,6 +55,10 @@ Le retour au sport n'est pas un moment unique, mais un continuum. Il est essenti
     title: "Exercice thérapeutique et tendinopathie : que dit la science ?",
     date: "1 mars 2026",
     isoDate: "2026-03-01",
+    related: [
+      { href: "/kinesitherapie/tendinopathie", label: "Tendinopathie : comprendre et traiter la douleur du tendon" },
+      { href: "/formations", label: "Formations pour kinésithérapeutes" },
+    ],
     category: "Science",
     readTime: "7 min",
     content: `L'exercice thérapeutique est considéré comme le traitement de première intention pour les tendinopathies. Mais quel type d'exercice, à quelle dose, et avec quelle progression ?

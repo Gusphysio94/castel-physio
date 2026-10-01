@@ -3,6 +3,8 @@
 import SectionTitle from "@/components/ui/SectionTitle";
 import TestimonialCard from "@/components/ui/TestimonialCard";
 import ScrollReveal from "@/components/ui/ScrollReveal";
+import TrustBadge from "@/components/ui/TrustBadge";
+import BookingButton from "@/components/ui/BookingButton";
 
 const testimonials = [
   {
@@ -38,6 +40,9 @@ export default function Testimonials() {
             title="Ce que les patient(e)s en disent"
             description="Ils m'ont fait confiance, pourquoi pas vous ?"
           />
+          <div className="-mt-8 mb-12 flex justify-center">
+            <TrustBadge tone="light" />
+          </div>
         </ScrollReveal>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
@@ -46,6 +51,10 @@ export default function Testimonials() {
               <TestimonialCard {...testimonial} />
             </ScrollReveal>
           ))}
+        </div>
+
+        <div className="mt-12 flex justify-center">
+          <BookingButton source="home-testimonials" />
         </div>
       </div>
     </section>

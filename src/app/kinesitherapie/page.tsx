@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import { pageMetadata } from "@/lib/seo";
 import SectionTitle from "@/components/ui/SectionTitle";
 import ServiceCard from "@/components/ui/ServiceCard";
-import Button from "@/components/ui/Button";
+import BookingButton from "@/components/ui/BookingButton";
+import Link from "next/link";
+import { conditions, localPage } from "@/lib/conditions";
 import CTABanner from "@/components/sections/CTABanner";
 
 export const metadata: Metadata = pageMetadata({
@@ -123,6 +125,30 @@ export default function Kinesitherapie() {
         </div>
       </section>
 
+      {/* Pathologies */}
+      <section className="py-20 md:py-28">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <SectionTitle
+            subtitle="Prise en charge"
+            title="Ce que je traite au cabinet"
+            description="Des guides clairs sur les blessures et douleurs les plus fréquentes chez le sportif."
+          />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {conditions.map((c) => (
+              <Link
+                key={c.slug}
+                href={`/kinesitherapie/${c.slug}`}
+                className="block bg-white rounded-2xl border border-navy-100 p-6 hover:border-amber-400 transition-colors"
+              >
+                <h3 className="text-lg font-bold text-navy-900 mb-2">{c.label}</h3>
+                <p className="text-sm text-navy-600 leading-relaxed">{c.lead}</p>
+                <span className="mt-3 inline-block text-sm font-medium text-amber-600">En savoir plus →</span>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Tarifs */}
       <section className="py-20 md:py-28">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -142,11 +168,24 @@ export default function Kinesitherapie() {
               </p>
             </div>
             <div className="mt-8">
-              <Button href="https://www.q-top.be/online-planner-v2/FR/?root=kq46938" variant="primary">
-                Prendre rendez-vous
-              </Button>
+              <BookingButton source="kine-index" />
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Cabinet */}
+      <section className="pb-20 md:pb-28">
+        <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-navy-600 leading-relaxed">
+            Je reçois au Centre ASPIS, Avenue Jacques Brel 34, à Woluwe-Saint-Lambert (1200 Bruxelles).{" "}
+            <Link
+              href={`/kinesitherapie/${localPage.slug}`}
+              className="text-amber-600 hover:text-amber-500 font-medium underline underline-offset-4"
+            >
+              Infos pratiques et accès
+            </Link>
+          </p>
         </div>
       </section>
 

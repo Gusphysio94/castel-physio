@@ -1,3 +1,4 @@
+import { BOOKING_URL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import Link from "next/link";
 
 export default function Footer() {
@@ -45,6 +46,7 @@ export default function Footer() {
               {[
                 { href: "/", label: "Accueil" },
                 { href: "/kinesitherapie", label: "Kinésithérapie" },
+                { href: "/kinesitherapie/woluwe-saint-lambert", label: "Kiné à Woluwe-Saint-Lambert" },
                 { href: "/formations", label: "Formations" },
                 { href: "/blog", label: "Blog" },
               ].map(({ href, label }) => (
@@ -64,7 +66,8 @@ export default function Footer() {
               {[
                 { href: "/a-propos", label: "À propos" },
                 { href: "/contact", label: "Contact" },
-                { href: "https://www.q-top.be/online-planner-v2/FR/?root=kq46938", label: "Prendre RDV", external: true },
+                { href: "/premiere-seance", label: "Première séance" },
+                { href: BOOKING_URL, label: "Prendre RDV", external: true },
               ].map(({ href, label, external }) => (
                 <li key={label}>
                   {external ? (
@@ -91,6 +94,12 @@ export default function Footer() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
                 </svg>
                 <span className="text-navy-400">Bruxelles, Belgique</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <svg className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <a href={`tel:${PHONE_TEL}`} className="text-navy-400 hover:text-amber-400 transition-colors">{PHONE_DISPLAY}</a>
               </li>
               <li className="flex items-start gap-3">
                 <svg className="w-4 h-4 text-amber-400 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

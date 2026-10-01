@@ -2,11 +2,12 @@
 
 import Link from "next/link";
 import { useState, useEffect } from "react";
+import { BOOKING_URL, PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 
 const navLinks = [
   { href: "/", label: "Accueil" },
   { href: "/kinesitherapie", label: "Kinésithérapie" },
-  { href: "/formations", label: "Formations" },
+  { href: "/formations", label: "Pour les kinés" },
   { href: "/blog", label: "Blog" },
   { href: "/a-propos", label: "À propos" },
   { href: "/contact", label: "Contact" },
@@ -65,23 +66,25 @@ export default function Header() {
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center gap-3">
             <a
-              href="https://www.q-top.be/online-planner-v2/FR/?root=kq46938"
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`px-4 py-2 text-sm font-semibold rounded-lg transition-all duration-200 btn-magnetic ${
-                scrolled
-                  ? "text-navy-800 border border-navy-200 hover:border-navy-300 hover:bg-navy-50"
-                  : "text-white border border-white/25 hover:border-white/50 hover:bg-white/10"
+              href={`tel:${PHONE_TEL}`}
+              data-umami-event="tel-click"
+              data-umami-event-source="header"
+              className={`hidden lg:inline text-[13px] font-medium transition-colors ${
+                scrolled ? "text-navy-600 hover:text-amber-500" : "text-navy-200 hover:text-amber-400"
               }`}
             >
-              Prendre RDV
+              {PHONE_DISPLAY}
             </a>
-            <Link
-              href="/formations"
-              className="px-4 py-2 text-sm font-semibold bg-amber-500 text-navy-950 rounded-lg hover:bg-amber-400 transition-all duration-200 shadow-sm hover:shadow-md btn-magnetic"
+            <a
+              href={BOOKING_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-umami-event="rdv-click"
+              data-umami-event-source="header"
+              className="px-5 py-2.5 text-sm font-semibold bg-amber-500 text-navy-950 rounded-lg hover:bg-amber-400 transition-all duration-200 shadow-sm hover:shadow-md btn-magnetic"
             >
-              Formations
-            </Link>
+              Prendre rendez-vous
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -119,21 +122,25 @@ export default function Header() {
             ))}
             <div className="pt-4 border-t border-navy-100 flex flex-col gap-2.5 mt-2">
               <a
-                href="https://www.q-top.be/online-planner-v2/FR/?root=kq46938"
+                href={BOOKING_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-center px-4 py-3 text-sm font-semibold text-navy-800 border border-navy-200 rounded-xl hover:bg-navy-50"
-                onClick={() => setMobileOpen(false)}
-              >
-                Prendre RDV
-              </a>
-              <Link
-                href="/formations"
+                data-umami-event="rdv-click"
+                data-umami-event-source="header-mobile"
                 className="text-center px-4 py-3 text-sm font-semibold bg-amber-500 text-navy-950 rounded-xl shadow-sm"
                 onClick={() => setMobileOpen(false)}
               >
-                Formations
-              </Link>
+                Prendre rendez-vous
+              </a>
+              <a
+                href={`tel:${PHONE_TEL}`}
+                data-umami-event="tel-click"
+                data-umami-event-source="header-mobile"
+                className="text-center px-4 py-3 text-sm font-semibold text-navy-800 border border-navy-200 rounded-xl hover:bg-navy-50"
+                onClick={() => setMobileOpen(false)}
+              >
+                Appeler le {PHONE_DISPLAY}
+              </a>
             </div>
           </div>
         </div>

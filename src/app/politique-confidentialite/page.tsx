@@ -125,7 +125,7 @@ export default function PolitiqueConfidentialite() {
             <h2 className="text-2xl font-bold text-navy-900 mb-4">Cookies</h2>
             <p>
               Ce site utilise uniquement des cookies techniques strictement nécessaires à son bon
-              fonctionnement. Aucun cookie publicitaire ou de traçage n&apos;est utilisé.
+              fonctionnement. Aucun cookie publicitaire ou de traçage n&apos;est utilisé. Le site utilise un outil de mesure d&apos;audience respectueux de la vie privée (Umami), sans cookie et sans donnée personnelle identifiable, uniquement pour savoir quelles pages sont consultées et comment améliorer le site.
               Ces cookies techniques ne nécessitent pas votre consentement préalable conformément
               à la législation belge.
             </p>

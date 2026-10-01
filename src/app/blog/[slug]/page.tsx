@@ -91,6 +91,21 @@ export default async function BlogPost({ params }: Props) {
             })}
           </article>
 
+          {article.related && (
+            <div className="mt-12 rounded-2xl bg-navy-50/60 border border-navy-100 p-6">
+              <p className="font-semibold text-navy-900 mb-3">Pour aller plus loin</p>
+              <ul className="space-y-2">
+                {article.related.map((r) => (
+                  <li key={r.href}>
+                    <Link href={r.href} className="text-amber-600 hover:text-amber-500 font-medium underline underline-offset-4">
+                      {r.label}
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          )}
+
           {/* Author */}
           <div className="mt-16 pt-8 border-t border-navy-100 flex items-center gap-4">
             <div className="w-14 h-14 bg-navy-200 rounded-full flex items-center justify-center">

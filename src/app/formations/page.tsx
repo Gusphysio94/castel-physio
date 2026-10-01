@@ -5,7 +5,7 @@ import SectionTitle from "@/components/ui/SectionTitle";
 import Button from "@/components/ui/Button";
 
 export const metadata: Metadata = pageMetadata({
-  title: "Formations pour kinésithérapeutes — Tendinopathie, Kinéathlétisation",
+  title: "Formations en ligne pour kinésithérapeutes",
   description:
     "Formations e-learning par Augustin Castel : Tendinopathie 2.0, Kinéathlétisation, Tendinopathie d'Achille 2.0. Contenu evidence-based pour professionnels de santé.",
   path: "/formations",

@@ -5,6 +5,8 @@ type ButtonProps = {
   variant?: "primary" | "secondary" | "outline";
   children: React.ReactNode;
   className?: string;
+  /** Événement de mesure d'audience (Umami) : nom + emplacement du bouton */
+  track?: { event: string; source?: string };
 };
 
 export default function Button({
@@ -12,6 +14,7 @@ export default function Button({
   variant = "primary",
   children,
   className = "",
+  track,
 }: ButtonProps) {
   const base =
     "inline-flex items-center justify-center px-7 py-3.5 rounded-xl font-semibold text-sm tracking-wide transition-all duration-300 cursor-pointer btn-magnetic";
@@ -27,6 +30,12 @@ export default function Button({
 
   const isExternal = href.startsWith("http");
   const classes = `${base} ${variants[variant]} ${className}`;
+  const trackAttrs = track
+    ? {
+        "data-umami-event": track.event,
+        ...(track.source ? { "data-umami-event-source": track.source } : {}),
+      }
+    : {};
 
   const arrow = variant === "primary" && (
     <svg className="w-4 h-4 ml-2 transition-transform duration-300 group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -36,7 +45,7 @@ export default function Button({
 
   if (isExternal) {
     return (
-      <a href={href} target="_blank" rel="noopener noreferrer" className={classes}>
+      <a href={href} target="_blank" rel="noopener noreferrer" className={classes} {...trackAttrs}>
         {children}
         {arrow}
       </a>
@@ -44,7 +53,7 @@ export default function Button({
   }
 
   return (
-    <Link href={href} className={classes}>
+    <Link href={href} className={classes} {...trackAttrs}>
       {children}
       {arrow}
     </Link>

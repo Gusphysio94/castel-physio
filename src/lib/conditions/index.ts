@@ -1,0 +1,81 @@
+import type { Condition } from "./types";
+import { cervicalgie } from "./cervicalgie";
+import { douleurEpaule } from "./douleur-epaule";
+import { douleurGenou } from "./douleur-genou";
+import { tendinopathie } from "./tendinopathie";
+import { entorseCheville } from "./entorse-cheville";
+import { lombalgie } from "./lombalgie";
+import { reeducationLca } from "./reeducation-lca";
+import { reeducationPostOperatoire } from "./reeducation-post-operatoire";
+
+export type { Condition } from "./types";
+
+/** Pathologies, dans l'ordre d'affichage de la page /kinesitherapie */
+export const conditions: Condition[] = [
+  tendinopathie,
+  reeducationLca,
+  entorseCheville,
+  douleurEpaule,
+  douleurGenou,
+  reeducationPostOperatoire,
+  lombalgie,
+  cervicalgie,
+];
+
+/** Page locale : n'est pas une pathologie, donc absente de la liste ci-dessus */
+export const localPage: Condition = {
+  slug: "woluwe-saint-lambert",
+  label: "Kiné à Woluwe-Saint-Lambert",
+  title: "Kiné du sport à Woluwe-Saint-Lambert (1200 Bruxelles)",
+  description:
+    "Cabinet de kiné du sport au Centre ASPIS, Avenue Jacques Brel 34, 1200 Woluwe-Saint-Lambert. Rendez-vous en ligne ou par téléphone, téléconsultation possible.",
+  h1: "Kinésithérapeute du sport à Woluwe-Saint-Lambert",
+  lead:
+    "Je reçois mes patients au Centre ASPIS, à Woluwe-Saint-Lambert, pour des soins de kinésithérapie du sport : blessures du sportif, douleurs musculo-squelettiques et rééducation après opération.",
+  subtypeGroups: [
+    {
+      heading: "Ce que je prends en charge",
+      items: conditions.map((c) => ({
+        name: c.label,
+        href: `/kinesitherapie/${c.slug}`,
+      })),
+    },
+  ],
+  sections: [
+    {
+      heading: "Le cabinet",
+      paragraphs: [
+        "Centre ASPIS, Avenue Jacques Brel 34, 1200 Bruxelles (Woluwe-Saint-Lambert). Le cabinet est facilement accessible depuis les communes voisines : Woluwe-Saint-Pierre, Etterbeek, Auderghem, Schaerbeek et Evere.",
+      ],
+    },
+    {
+      heading: "Pour qui ?",
+      paragraphs: [
+        "Pour les sportifs de tous niveaux, coureurs, joueurs de sports collectifs, pratiquants de loisir, mais aussi pour toute personne qui souffre du dos, d'une articulation ou d'un tendon et souhaite une prise en charge active, basée sur les preuves scientifiques.",
+      ],
+    },
+    {
+      heading: "Prendre rendez-vous",
+      paragraphs: [
+        "Vous pouvez réserver en ligne via la plateforme Q-Top, ou me joindre par téléphone au +32 497 23 38 58. Pour que les séances soient remboursées par votre mutuelle, une prescription médicale est requise, et une attestation de soins vous est remise à chaque séance.",
+        "Si vous ne pouvez pas vous déplacer, ou pour un suivi entre deux séances, la téléconsultation est possible.",
+      ],
+    },
+  ],
+  myths: [],
+  care: [],
+  faq: [
+    { q: "Où se trouve votre cabinet ?", a: ["Au Centre ASPIS, Avenue Jacques Brel 34, 1200 Bruxelles, à Woluwe-Saint-Lambert."] },
+    { q: "Faut-il une prescription pour consulter ?", a: ["Pour un remboursement par la mutuelle, oui, une prescription médicale est requise."] },
+    { q: "Comment prendre rendez-vous ?", a: ["En ligne via Q-Top depuis le site, ou par téléphone au +32 497 23 38 58."] },
+    { q: "Proposez-vous la téléconsultation ?", a: ["Oui, pour les bilans de progression, l'ajustement du programme et le suivi entre deux séances au cabinet."] },
+  ],
+  related: [],
+  references: [],
+};
+
+export const allPages: Condition[] = [...conditions, localPage];
+
+export function getCondition(slug: string): Condition | undefined {
+  return allPages.find((c) => c.slug === slug);
+}
