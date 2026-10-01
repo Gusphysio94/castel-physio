@@ -10,7 +10,7 @@ export const reeducationLca: Condition = {
   lead:
     "Une rupture du ligament croisé antérieur (LCA) bouleverse la saison, parfois bien davantage. La bonne nouvelle : que vous soyez opéré ou non, une rééducation structurée change vraiment la suite. Et le retour au sport se décide sur des critères, pas seulement sur un calendrier.",
   takeaway:
-    "Neuf mois après l'opération n'est pas une ligne d'arrivée : c'est un minimum, à confirmer par la force, les sauts et la confiance.",
+    "Le retour au sport après un LCA se décide sur des critères (force, sauts, confiance) plutôt que sur une date : neuf mois est un repère de minimum, pas une ligne d'arrivée ni un seuil validé.",
   subtypeGroups: [
     {
       heading: "Rupture du LCA",
@@ -80,8 +80,8 @@ export const reeducationLca: Condition = {
     {
       myth: "« Au bout de six mois, je suis prêt à reprendre mon sport. »",
       reality: [
-        "La marche et la vie quotidienne reviennent bien avant que le genou soit prêt pour les pivots. Chez des sportifs opérés (Grindem 2016), reprendre un sport à pivots avant neuf mois et sans avoir atteint les critères de force et de sauts s'accompagnait d'un risque nettement plus élevé de nouvelle blessure.",
-        "C'est une étude observationnelle, mais elle va dans le sens d'une reprise décidée sur des tests plutôt que sur une impression.",
+        "La marche et la vie quotidienne reviennent bien avant que le genou soit prêt pour les pivots. Dans une étude de suivi de sportifs opérés (Grindem 2016), reprendre un sport à pivots plus tôt, avant neuf mois, était associé à davantage de nouvelles blessures du genou.",
+        "C'est une étude observationnelle, et les revues de synthèse ne démontrent pas encore que réussir une série de tests évite à coup sûr une nouvelle rupture. Mais décider sur des critères plutôt que sur une impression ou une date reste la recommandation des experts.",
       ],
     },
     {
@@ -138,22 +138,22 @@ export const reeducationLca: Condition = {
     {
       q: "Quand pourrai-je reprendre mon sport ?",
       a: [
-        "Il n'existe pas de date magique. Dans l'étude de Grindem (2016), chez 106 sportifs opérés, chaque mois de report de la reprise jusqu'au 9e mois diminuait le risque de nouvelle blessure du genou (de 51 % par mois), sans bénéfice supplémentaire au-delà. Ce délai de neuf mois est donc un minimum raisonnable pour les sports à pivots, pas une garantie.",
+        "Il n'existe pas de date magique. Dans l'étude de Grindem (2016), chez 106 sportifs opérés, chaque mois de report de la reprise jusqu'au 9e mois était associé à moins de nouvelles blessures du genou (51 % de réduction par mois), sans bénéfice supplémentaire constaté au-delà. Comme il s'agit d'une étude observationnelle, neuf mois est un repère de minimum raisonnable pour les sports à pivots, pas un seuil validé ni une garantie.",
         "Selon votre sport, votre niveau et votre évolution, cela peut prendre davantage. Je décide avec vous sur des critères mesurés.",
       ],
     },
     {
       q: "Pourquoi la date seule ne suffit-elle pas ?",
       a: [
-        "Parce que deux personnes opérées le même jour n'ont pas la même force, le même contrôle ni la même confiance neuf mois plus tard. Dans la même étude, 38 % des sportifs qui n'avaient pas satisfait aux critères (force du quadriceps, sauts, questionnaires, avec des scores supérieurs à 90 % de l'autre jambe) ont eu une nouvelle blessure du genou, contre environ 6 % de ceux qui les avaient satisfaits.",
-        "Attention : c'est une étude observationnelle sur un petit groupe, il faut lire ces chiffres comme une tendance, pas comme une promesse.",
+        "Parce que deux personnes opérées le même jour n'ont pas la même force, le même contrôle ni la même confiance neuf mois plus tard. Dans la même étude, 38 % des sportifs qui n'avaient pas satisfait aux critères (force du quadriceps, sauts, questionnaires) ont eu une nouvelle blessure du genou, contre environ 6 % de ceux qui les avaient satisfaits.",
+        "Attention : c'est une étude observationnelle sur un petit groupe, et l'écart entre les deux groupes n'était pas statistiquement significatif. Deux méta-analyses (Losciale 2019, Webster et Hewett 2019) ne démontrent pas que satisfaire aux critères évite à coup sûr une nouvelle rupture, avec des preuves de faible qualité. Lisez ces chiffres comme une tendance, pas comme une promesse. Le signal le plus constant reste une bonne force du quadriceps avant la reprise.",
       ],
     },
     {
       q: "Quels sont les tests pour valider le retour au sport ?",
       a: [
-        "Je combine trois familles de tests : la force (le quadriceps de la jambe opérée comparé à l'autre, avec un objectif d'au moins 90 %), des tests de sauts (simple saut, triple saut, saut latéral, réception) pour vérifier la symétrie et la qualité du geste, et un volet psychologique.",
-        "Pour ce dernier, j'utilise l'échelle ACL-RSI, un questionnaire qui mesure vos émotions, votre confiance et l'idée que vous vous faites du risque de reprendre. Elle a été conçue pour repérer les sportifs qui auront du mal à reprendre.",
+        "Je combine trois familles de tests : la force (le quadriceps de la jambe opérée comparé à l'autre, avec un repère courant d'au moins 90 %, qui sert de point de repère plutôt que de seuil validé), des tests de sauts (simple saut, triple saut, saut latéral, réception) pour vérifier la symétrie et la qualité du geste, et un volet psychologique.",
+        "Pour ce dernier, j'utilise l'échelle ACL-RSI, un questionnaire qui mesure vos émotions, votre confiance et l'idée que vous vous faites du risque de reprendre. Elle a été conçue pour repérer les sportifs qui auront du mal à reprendre ; sa validation reste préliminaire, c'est donc un élément du dossier parmi d'autres, pas un verdict.",
       ],
     },
     {
@@ -260,6 +260,16 @@ export const reeducationLca: Condition = {
       citation:
         "Kayaalp ME, Celik H, Ostojic M, et al. Adherence as the key to anterior cruciate ligament injury prevention programme success: from efficacy to effectiveness. Knee Surg Sports Traumatol Arthrosc. 2026;34(6):1935-9.",
       pmid: "41451616",
+    },
+    {
+      citation:
+        "Losciale JM, Zdeb RM, Ledbetter L, et al. The association between passing return-to-sport criteria and second anterior cruciate ligament injury risk: a systematic review with meta-analysis. J Orthop Sports Phys Ther. 2019;49(2):43-54.",
+      pmid: "30501385",
+    },
+    {
+      citation:
+        "Webster KE, Hewett TE. What is the evidence for and validity of return-to-sport testing after anterior cruciate ligament reconstruction surgery? A systematic review and meta-analysis. Sports Med. 2019;49(6):917-29.",
+      pmid: "30905035",
     },
   ],
 };

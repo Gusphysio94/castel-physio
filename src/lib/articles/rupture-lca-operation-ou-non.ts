@@ -82,7 +82,7 @@ Si vous êtes opéré, une préparation avant l'opération semble améliorer la 
 
 ## Retour au sport : sur critères, pas sur une date
 
-On entend souvent « six mois, c'est bon ». Ce n'est pas si simple. Dans une étude de suivi chez 106 sportifs opérés (Grindem), reprendre un sport à pivots avant 9 mois et sans avoir atteint les critères de force et de sauts s'accompagnait d'un risque nettement plus élevé de nouvelle blessure du genou. Cette étude est observationnelle et sur un petit groupe : c'est une tendance, pas une promesse. Mais elle va dans le même sens que ce que nous faisons au cabinet.
+On entend souvent « six mois, c'est bon ». Ce n'est pas si simple. Dans une étude de suivi chez 106 sportifs opérés (Grindem), reprendre un sport à pivots plus tôt, avant 9 mois, était associé à davantage de nouvelles blessures du genou. Mais cette étude est observationnelle et porte sur un petit groupe, et les revues de synthèse ne démontrent pas que réussir une série de tests évite à coup sûr une nouvelle rupture : les preuves sont de faible qualité. Ce qui est largement admis, c'est qu'il vaut mieux décider sur des critères que sur une date. Neuf mois est un repère de minimum raisonnable, pas un seuil validé.
 
 Le calendrier est donc un minimum, pas une ligne d'arrivée. Ce qui compte :
 
@@ -134,7 +134,7 @@ Pour la suite, retenez ceci : opérer ou ne pas opérer n'est pas une question d
     },
     {
       q: "Quand pourrai-je reprendre mon sport ?",
-      a: "Il n'y a pas de date magique. Pour un sport à pivots après une opération, neuf mois est un minimum raisonnable d'après les données disponibles, et souvent il faut davantage. Le feu vert se donne sur des tests de force, de sauts et de confiance. Je décide avec vous, et avec votre chirurgien, une fois ces critères atteints.",
+      a: "Il n'y a pas de date magique. Pour un sport à pivots après une opération, neuf mois est un repère de minimum raisonnable d'après les données disponibles (sans être un seuil validé), et souvent il faut davantage. Le feu vert se donne sur des tests de force, de sauts et de confiance, lus comme des repères et non comme des garanties. Je décide avec vous, et avec votre chirurgien, une fois ces critères atteints.",
     },
     {
       q: "Peut-on se rompre à nouveau le LCA ?",
@@ -187,6 +187,16 @@ Pour la suite, retenez ceci : opérer ou ne pas opérer n'est pas une question d
       citation:
         "Webster KE, Feller JA, Lambros C. Development and preliminary validation of a scale to measure the psychological impact of returning to sport following anterior cruciate ligament reconstruction surgery. Phys Ther Sport. 2008;9(1):9-15.",
       pmid: "19083699",
+    },
+    {
+      citation:
+        "Losciale JM, Zdeb RM, Ledbetter L, et al. The association between passing return-to-sport criteria and second anterior cruciate ligament injury risk: a systematic review with meta-analysis. J Orthop Sports Phys Ther. 2019;49(2):43-54.",
+      pmid: "30501385",
+    },
+    {
+      citation:
+        "Webster KE, Hewett TE. What is the evidence for and validity of return-to-sport testing after anterior cruciate ligament reconstruction surgery? A systematic review and meta-analysis. Sports Med. 2019;49(6):917-29.",
+      pmid: "30905035",
     },
   ],
 };

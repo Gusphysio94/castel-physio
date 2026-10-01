@@ -38,7 +38,7 @@ Cette lecture est aussi celle du consensus du Comité international olympique : 
 
 On vous a peut-être dit « six semaines, et c'est reparti », ou « neuf mois après l'opération ». Une date peut servir de repère minimum, mais deux personnes blessées le même jour n'ont pas la même force, le même contrôle ni la même confiance au même moment.
 
-Les meilleures données disponibles concernent le ligament croisé antérieur. Dans l'étude de Grindem et collègues, chez des sportifs opérés, reprendre un sport à pivots avant neuf mois et sans avoir atteint les critères de force et de sauts allait avec un risque nettement plus élevé de nouvelle blessure du genou. C'est une étude observationnelle sur un petit groupe : une tendance solide, pas une promesse. Elle est détaillée sur la page [rééducation du LCA](/kinesitherapie/reeducation-lca).
+Les meilleures données disponibles concernent le ligament croisé antérieur. Dans l'étude de Grindem et collègues, chez des sportifs opérés, reprendre un sport à pivots avant neuf mois allait avec davantage de nouvelles blessures du genou. C'est une étude observationnelle sur un petit groupe, et les revues de synthèse ne démontrent pas encore que réussir une série de tests évite à coup sûr une nouvelle rupture. Décider sur des critères plutôt que sur une date reste la recommandation des experts, avec les tests comme repères et non comme garanties. Le sujet est détaillé sur la page [rééducation du LCA](/kinesitherapie/reeducation-lca).
 
 Concrètement, les critères portent sur trois familles :
 
@@ -103,7 +103,7 @@ Si vous sortez d'une opération, voyez aussi la [rééducation post-opératoire]
   faq: [
     {
       q: "Combien de temps faut-il attendre avant de reprendre le sport ?",
-      a: "Il n'y a pas de durée valable pour tout le monde. Cela dépend de la blessure, de votre sport et de votre évolution. Une date sert de repère minimum, mais la décision repose surtout sur la force, des tests fonctionnels adaptés et votre confiance. Après un LCA, par exemple, reprendre avant neuf mois et sans critères atteints va avec davantage de nouvelles blessures dans la littérature. Je vous donne une estimation après le bilan, jamais une promesse.",
+      a: "Il n'y a pas de durée valable pour tout le monde. Cela dépend de la blessure, de votre sport et de votre évolution. Une date sert de repère minimum, mais la décision repose surtout sur la force, des tests fonctionnels adaptés et votre confiance. Après un LCA, par exemple, reprendre avant neuf mois va avec davantage de nouvelles blessures dans une étude de référence, mais les tests de retour au sport sont des repères et non des garanties. Je vous donne une estimation après le bilan, jamais une promesse.",
     },
     {
       q: "Peut-on reprendre alors qu'il reste un peu de douleur ?",
@@ -168,6 +168,16 @@ Si vous sortez d'une opération, voyez aussi la [rééducation post-opératoire]
       citation:
         "Cantón E, Raga J, Peris-Delcampo D. Sleep, stress, and recovery as predictors of injury risk in soccer players: a systematic review. Healthcare (Basel). 2026;14(2):236.",
       pmid: "41595372",
+    },
+    {
+      citation:
+        "Losciale JM, Zdeb RM, Ledbetter L, et al. The association between passing return-to-sport criteria and second anterior cruciate ligament injury risk: a systematic review with meta-analysis. J Orthop Sports Phys Ther. 2019;49(2):43-54.",
+      pmid: "30501385",
+    },
+    {
+      citation:
+        "Webster KE, Hewett TE. What is the evidence for and validity of return-to-sport testing after anterior cruciate ligament reconstruction surgery? A systematic review and meta-analysis. Sports Med. 2019;49(6):917-29.",
+      pmid: "30905035",
     },
   ],
 };
