@@ -53,7 +53,7 @@ export default function Hero() {
             </h1>
 
             {/* Subheadline */}
-            <p className="animate-reveal-up delay-200 text-lg md:text-xl text-navy-300 leading-relaxed mb-12 max-w-xl">
+            <p className="animate-reveal-up delay-200 text-lg md:text-xl text-navy-300 leading-relaxed mb-12 max-w-xl text-left">
               Augustin Castel, kinésithérapeute du sport à Bruxelles (Woluwe-Saint-Lambert).
               Une prise en charge individualisée, basée sur les dernières preuves scientifiques.
             </p>

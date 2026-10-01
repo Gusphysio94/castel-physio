@@ -19,7 +19,7 @@ export default function ServiceCard({ icon, title, tagline, description }: Servi
         {tagline && (
           <p className="text-navy-700 font-semibold text-[15px] mb-3">{tagline}</p>
         )}
-        <p className="text-navy-500 leading-relaxed text-[15px] text-justify whitespace-pre-line">{description}</p>
+        <p className="text-navy-500 leading-relaxed text-[15px] text-left whitespace-pre-line">{description}</p>
 
         {/* Bottom accent line */}
         <div className="mt-6 h-0.5 w-0 group-hover:w-12 bg-gradient-to-r from-amber-400 to-amber-300 transition-all duration-500 rounded-full" />

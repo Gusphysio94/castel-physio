@@ -44,7 +44,7 @@ export default function ServiceFlipCard({ icon, title, tagline, description, ima
           {tagline && (
             <p className="text-navy-700 font-semibold text-[15px] mb-3">{tagline}</p>
           )}
-          <p className="text-navy-500 leading-relaxed text-[15px] text-justify whitespace-pre-line">{description}</p>
+          <p className="text-navy-500 leading-relaxed text-[15px] text-left whitespace-pre-line">{description}</p>
         </div>
       </div>
 
