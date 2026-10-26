@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Mentions légales",
   description:
-    "Mentions légales du site Castel Physio.",
+    "Mentions légales du site Castel Physio : éditeur, profession réglementée, hébergement, propriété intellectuelle, responsabilité et droit applicable.",
   path: "/mentions-legales",
 });
 

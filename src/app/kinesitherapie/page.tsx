@@ -10,7 +10,7 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = pageMetadata({
   title: "Kinésithérapie du sport à Bruxelles",
   description:
-    "Consultations de kinésithérapie du sport à Bruxelles par Augustin Castel. Bilan complet, téléconsultation et coaching sportif individualisé. Centre Aspis, Woluwe-Saint-Lambert.",
+    "Tendinopathie, LCA, entorse, épaule, genou, dos, nuque, course à pied : kinésithérapie du sport à Woluwe-Saint-Lambert, avec bilan complet et plan clair.",
   path: "/kinesitherapie",
 });
 

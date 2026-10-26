@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Politique de confidentialité",
   description:
-    "Politique de confidentialité et protection des données personnelles du site Castel Physio.",
+    "Politique de confidentialité de Castel Physio : données collectées, base légale, données de santé, durée de conservation, vos droits et cookies.",
   path: "/politique-confidentialite",
 });
 

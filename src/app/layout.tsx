@@ -21,11 +21,11 @@ const playfair = Playfair_Display({
 export const metadata: Metadata = {
   metadataBase: new URL("https://castel-physio.com"),
   title: {
-    default: "Augustin Castel — Kinésithérapeute du sport à Bruxelles | Castel Physio",
+    default: "Kinésithérapeute du sport à Bruxelles | Augustin Castel",
     template: "%s | Castel Physio",
   },
   description:
-    "Augustin Castel, kinésithérapeute du sport à Bruxelles. Consultations au cabinet, téléconsultation, coaching sportif individualisé et formations pour professionnels de santé. Approche evidence-based, personnalisée et orientée résultats.",
+    "Kinésithérapeute du sport à Woluwe-Saint-Lambert (Bruxelles) : tendons, genou, dos, épaule, course à pied. Bilan complet, plan clair, réservation en ligne.",
   keywords: [
     "Augustin Castel",
     "Castel Physio",

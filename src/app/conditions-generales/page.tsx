@@ -4,7 +4,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Conditions générales",
   description:
-    "Conditions générales d'utilisation du site et des services de Castel Physio.",
+    "Conditions générales de Castel Physio : rendez-vous, annulation, tarifs et paiement, téléconsultation, formations en ligne, secret professionnel et litiges.",
   path: "/conditions-generales",
 });
 

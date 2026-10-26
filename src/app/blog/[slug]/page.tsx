@@ -7,7 +7,8 @@ import ArticleCard from "@/components/blog/ArticleCard";
 import { DoDont, MythHero } from "@/components/blog/MythBlocks";
 import BookingButton from "@/components/ui/BookingButton";
 import Button from "@/components/ui/Button";
-import { articles, getArticle } from "@/lib/articles";
+import { articles, getArticle, relatedArticles, topicsOf } from "@/lib/articles";
+import { getCondition } from "@/lib/conditions";
 import { extractHeadings, formatDate, readingMinutes } from "@/lib/articles/format";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { SITE_URL, pageMetadata } from "@/lib/seo";
@@ -50,10 +51,14 @@ export default async function BlogPost({ params }: Props) {
       .filter(Boolean)
       .join(" ")
   );
-  const pathologyLink = article.related.find((r) => r.href.startsWith("/kinesitherapie/"));
-  const more = articles
-    .filter((a) => a.slug !== article.slug && a.audience === article.audience)
-    .slice(0, 3);
+  // Liens vers les pages de pathologie du sujet, ajoutés à ceux de l'article
+  const topicLinks = topicsOf(article.slug).flatMap((s) => {
+    const c = getCondition(s);
+    return c ? [{ href: `/kinesitherapie/${c.slug}`, label: c.label }] : [];
+  });
+  const relatedLinks = [...article.related, ...topicLinks.filter((t) => !article.related.some((r) => r.href === t.href))];
+  const pathologyLink = relatedLinks.find((r) => r.href.startsWith("/kinesitherapie/"));
+  const more = relatedArticles(article, 3);
   const url = `${SITE_URL}/blog/${article.slug}`;
 
   const jsonLd: object[] = [
@@ -279,11 +284,11 @@ export default async function BlogPost({ params }: Props) {
             </details>
           )}
 
-          {article.related.length > 0 && (
+          {relatedLinks.length > 0 && (
             <div>
               <h2 className="text-xl font-bold text-navy-900 mb-3">Pour aller plus loin</h2>
               <ul className="space-y-2">
-                {article.related.map((r) => (
+                {relatedLinks.map((r) => (
                   <li key={r.href}><Link href={r.href} className={linkClass}>{r.label}</Link></li>
                 ))}
               </ul>

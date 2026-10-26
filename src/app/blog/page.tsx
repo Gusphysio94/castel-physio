@@ -8,7 +8,7 @@ import { pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Blog : idées reçues sur la douleur et les blessures",
   description:
-    "Mal de dos, genou, tendon, épaule : des mini-articles clairs qui démontent les idées reçues, appuyés sur la science, par Augustin Castel, kiné du sport à Bruxelles.",
+    "Mal de dos, genou, tendon, épaule : des mini-articles clairs qui démontent les idées reçues avec ce que dit la science. Par Augustin Castel, kiné du sport.",
   path: "/blog",
 });
 

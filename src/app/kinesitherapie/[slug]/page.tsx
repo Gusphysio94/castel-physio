@@ -4,6 +4,8 @@ import { notFound } from "next/navigation";
 import BookingButton from "@/components/ui/BookingButton";
 import CTABanner from "@/components/sections/CTABanner";
 import LoadCapacityDiagram from "@/components/LoadCapacityDiagram";
+import ArticleCard from "@/components/blog/ArticleCard";
+import { articlesForCondition } from "@/lib/articles";
 import { allPages, getCondition } from "@/lib/conditions";
 import { PHONE_DISPLAY, PHONE_TEL } from "@/lib/site";
 import { SITE_URL, pageMetadata } from "@/lib/seo";
@@ -368,6 +370,21 @@ export default async function ConditionPage({ params }: Props) {
                 ))}
               </ol>
             </details>
+          </div>
+        </section>
+      )}
+
+      {/* Articles du blog sur le sujet */}
+      {articlesForCondition(condition.slug).length > 0 && (
+        <section className="py-16 md:py-20 bg-navy-50/50">
+          <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-600 mb-2">Sur le blog</p>
+            <h2 className="font-display text-2xl md:text-3xl font-bold text-navy-900 mb-8">Pour mieux comprendre</h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {articlesForCondition(condition.slug).map((a) => (
+                <ArticleCard key={a.slug} article={a} />
+              ))}
+            </div>
           </div>
         </section>
       )}

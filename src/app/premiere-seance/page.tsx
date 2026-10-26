@@ -8,7 +8,7 @@ import { SITE_URL, pageMetadata } from "@/lib/seo";
 export const metadata: Metadata = pageMetadata({
   title: "Votre première séance de kiné : à quoi s'attendre",
   description:
-    "Comment se passe un premier rendez-vous chez Augustin Castel, kinésithérapeute du sport à Woluwe-Saint-Lambert : déroulement, documents à apporter, remboursement, annulation.",
+    "Déroulement d'un premier rendez-vous chez Augustin Castel, kiné du sport à Woluwe-Saint-Lambert : documents à apporter, remboursement, annulation.",
   path: "/premiere-seance",
 });
 

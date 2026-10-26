@@ -28,8 +28,10 @@ export function pageMetadata({
   publishedTime,
 }: PageMetadataInput): Metadata {
   const ogTitle = socialTitle ?? `${title} | ${SITE_NAME}`;
+  // Le layout ajoute « | Castel Physio » : on le retire si le titre dépasserait ~60 caractères.
+  const fits = title.length + " | Castel Physio".length <= 60;
   return {
-    title,
+    title: fits ? title : { absolute: title },
     description,
     alternates: { canonical: path },
     openGraph: {

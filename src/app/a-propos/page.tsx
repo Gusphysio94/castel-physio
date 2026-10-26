@@ -7,7 +7,7 @@ import CTABanner from "@/components/sections/CTABanner";
 export const metadata: Metadata = pageMetadata({
   title: "À propos d'Augustin Castel — Kinésithérapeute du sport",
   description:
-    "Découvrez le parcours d'Augustin Castel, kinésithérapeute du sport à Bruxelles. Approche evidence-based, personnalisée et orientée résultats. Formateur pour professionnels de santé.",
+    "Découvrez le parcours d'Augustin Castel, kinésithérapeute du sport à Bruxelles : une approche basée sur les preuves, centrée sur le patient. Formateur de kinés.",
   path: "/a-propos",
 });
 

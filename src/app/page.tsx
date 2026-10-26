@@ -5,6 +5,7 @@ import Testimonials from "@/components/sections/Testimonials";
 import About from "@/components/sections/About";
 import FirstVisit from "@/components/sections/FirstVisit";
 import Services from "@/components/sections/Services";
+import MythsPreview from "@/components/sections/MythsPreview";
 import CTABanner from "@/components/sections/CTABanner";
 import ProStrip from "@/components/sections/ProStrip";
 
@@ -21,6 +22,7 @@ export default function Home() {
       <About />
       <FirstVisit />
       <Services />
+      <MythsPreview />
       <CTABanner />
       <ProStrip />
     </>

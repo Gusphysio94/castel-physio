@@ -58,3 +58,47 @@ export const articles: Article[] = [...all].sort((a, b) => b.isoDate.localeCompa
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
 }
+
+import { articleTopics } from "./topics";
+
+export { articleTopics };
+
+/** Pages de pathologie liées à un article */
+export function topicsOf(slug: string): string[] {
+  return articleTopics[slug] ?? [];
+}
+
+/** Articles rattachés à une page de pathologie (patients d'abord, mythes avant guides) */
+export function articlesForCondition(conditionSlug: string, max = 4): Article[] {
+  const rank = (a: Article) => (a.audience === "patients" ? 0 : 2) + (a.kind === "mythe" ? 0 : 1);
+  return articles
+    .filter((a) => topicsOf(a.slug).includes(conditionSlug))
+    .sort((a, b) => rank(a) - rank(b))
+    .slice(0, max);
+}
+
+function hash(s: string): number {
+  let h = 0;
+  for (let i = 0; i < s.length; i++) h = (h * 31 + s.charCodeAt(i)) % 9973;
+  return h;
+}
+
+/**
+ * Articles proches d'un article : sujets communs d'abord, puis même thème et même public.
+ * À score égal, l'ordre dépend de l'article de départ, pour répartir les liens entre tous les articles.
+ */
+export function relatedArticles(article: Article, max = 3): Article[] {
+  const mine = new Set(topicsOf(article.slug));
+  return articles
+    .filter((a) => a.slug !== article.slug)
+    .map((a) => ({
+      a,
+      score:
+        topicsOf(a.slug).filter((t) => mine.has(t)).length * 10 +
+        (a.category === article.category ? 3 : 0) +
+        (a.audience === article.audience ? 1 : 0),
+    }))
+    .sort((x, y) => y.score - x.score || hash(article.slug + x.a.slug) - hash(article.slug + y.a.slug))
+    .slice(0, max)
+    .map((x) => x.a);
+}
