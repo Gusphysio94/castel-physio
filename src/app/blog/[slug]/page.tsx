@@ -148,6 +148,30 @@ export default async function BlogPost({ params }: Props) {
         </section>
       )}
 
+      {/* Appel à l'action discret, en haut de l'article (patients) */}
+      {isPatient && (
+        <section className="pt-6">
+          <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="rounded-2xl border border-navy-100 bg-navy-50 p-5 md:p-6 md:flex md:items-center md:justify-between gap-6">
+              <p className="text-navy-800 leading-snug md:max-w-md text-left">
+                <span className="font-semibold">Cela vous concerne ?</span> Faites le point avec moi lors d&apos;un premier bilan, à Woluwe-Saint-Lambert.
+              </p>
+              <div className="mt-4 md:mt-0 flex flex-col sm:flex-row sm:items-center gap-3 shrink-0">
+                <BookingButton source={`blog-${article.slug}-haut`} />
+                <a
+                  href={`tel:${PHONE_TEL}`}
+                  data-umami-event="tel-click"
+                  data-umami-event-source={`blog-${article.slug}-haut`}
+                  className="text-sm font-medium text-navy-600 hover:text-amber-600 transition-colors"
+                >
+                  ou appelez le {PHONE_DISPLAY}
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* Contenu */}
       <section className="py-12 md:py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
