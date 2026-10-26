@@ -4,9 +4,9 @@ export const malDeDosReposAuLit: Article = {
   kind: "mythe",
   slug: "mal-de-dos-repos-au-lit",
   title: "Mal de dos : faut-il vraiment rester au lit pour guérir ?",
-  metaTitle: "Mal de dos : faut-il rester au lit ?",
+  metaTitle: "Mal de dos : faut-il rester au lit ou bouger ?",
   description:
-    "Rester allongé quand le dos fait mal est un réflexe courant. Que disent les études sur le repos au lit, la marche et la reprise progressive ? Réponse claire.",
+    "Rester au lit n'aide pas à guérir plus vite d'un mal de dos. Ce que disent les études sur le repos, la marche dosée et la reprise progressive.",
   excerpt:
     "Le lit semble logique quand le dos fait mal. Les études racontent autre chose : la bonne dose se trouve entre repos et effort forcé.",
   isoDate: "2026-10-01",

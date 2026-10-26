@@ -3,9 +3,9 @@ import type { Article } from "./types";
 export const torticolisDureeQueFaire: Article = {
   slug: "torticolis-duree-que-faire",
   title: "Torticolis : combien de temps ça dure et que faire ?",
-  metaTitle: "Torticolis : durée et que faire ? Conseils de kiné",
+  metaTitle: "Combien de temps dure un torticolis ? Que faire",
   description:
-    "Nuque bloquée au réveil ? Ce qui se passe vraiment dans un torticolis, combien de temps il dure souvent, que faire les premiers jours et quand consulter.",
+    "Un torticolis s'améliore souvent en quelques jours à quelques semaines. Ce qui se passe dans la nuque, que faire les premiers jours et quand consulter.",
   excerpt:
     "Un torticolis est impressionnant, mais presque toujours bénin : la nuque se protège. Voici ce qui aide, ce qu'il vaut mieux éviter et les signes qui doivent vous faire consulter.",
   isoDate: "2026-10-01",

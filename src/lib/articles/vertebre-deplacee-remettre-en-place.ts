@@ -7,7 +7,7 @@ export const vertebreDeplaceeRemettreEnPlace: Article = {
   isoDate: "2026-10-01",
   category: "Dos",
   title: "Vertèbre déplacée ? Non : votre dos ne se « déboîte » pas",
-  metaTitle: "Vertèbre déplacée : mythe ou réalité ?",
+  metaTitle: "Une vertèbre peut-elle se déplacer ? Ce que dit la science",
   description:
     "Le « crac » d'une manipulation est un bruit de gaz, pas un os qui se remet en place. Ce que disent les études sur les vertèbres « déplacées » et le mal de dos.",
   excerpt:

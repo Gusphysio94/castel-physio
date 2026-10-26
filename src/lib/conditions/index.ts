@@ -28,9 +28,9 @@ export const conditions: Condition[] = [
 export const localPage: Condition = {
   slug: "woluwe-saint-lambert",
   label: "Kiné à Woluwe-Saint-Lambert",
-  title: "Kiné du sport à Woluwe-Saint-Lambert (1200 Bruxelles)",
+  title: "Kiné du sport à Woluwe-Saint-Lambert | Centre ASPIS",
   description:
-    "Cabinet de kiné du sport au Centre ASPIS, Avenue Jacques Brel 34, 1200 Woluwe-Saint-Lambert. Rendez-vous en ligne ou par téléphone, téléconsultation possible.",
+    "Augustin Castel, kiné du sport au Centre ASPIS, Avenue Jacques Brel 34, à 5 min à pied du métro Roodebeek. Rendez-vous en ligne ou par téléphone.",
   h1: "Kinésithérapeute du sport à Woluwe-Saint-Lambert",
   lead:
     "Je reçois mes patients au Centre ASPIS, à Woluwe-Saint-Lambert (Woluwe, Sint-Lambrechts-Woluwe en néerlandais), aux portes de Woluwe-Saint-Pierre, pour des soins de kinésithérapie du sport : blessures du sportif, douleurs musculo-squelettiques et rééducation après opération.",
