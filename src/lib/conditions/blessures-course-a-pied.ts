@@ -275,6 +275,7 @@ export const blessuresCourseAPied: Condition = {
     { href: "/kinesitherapie/entorse-cheville", label: "Entorse de cheville" },
     { href: "/blog/courir-a-woluwe-sans-se-blesser", label: "Article : courir à Woluwe sans se blesser" },
     { href: "/blog/reprendre-le-sport-apres-une-blessure", label: "Article : reprendre le sport après une blessure" },
+    { href: "/kinesitherapie/ondes-de-choc", label: "Ondes de choc : indications et preuves" },
   ],
   references: [
     {

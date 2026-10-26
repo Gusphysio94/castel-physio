@@ -219,6 +219,7 @@ export const tendinopathie: Condition = {
     { href: "/kinesitherapie/douleur-epaule", label: "Douleur à l'épaule" },
     { href: "/kinesitherapie/woluwe-saint-lambert", label: "Kinésithérapie à Woluwe-Saint-Lambert" },
     { href: "/formations", label: "Formations pour kinésithérapeutes : Tendinopathie 2.0" },
+    { href: "/kinesitherapie/ondes-de-choc", label: "Ondes de choc : indications et preuves" },
   ],
   references: [
     {

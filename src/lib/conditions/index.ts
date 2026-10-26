@@ -3,6 +3,7 @@ import { cervicalgie } from "./cervicalgie";
 import { douleurEpaule } from "./douleur-epaule";
 import { douleurGenou } from "./douleur-genou";
 import { tendinopathie } from "./tendinopathie";
+import { ondesDeChoc } from "./ondes-de-choc";
 import { blessuresCourseAPied } from "./blessures-course-a-pied";
 import { entorseCheville } from "./entorse-cheville";
 import { lombalgie } from "./lombalgie";
@@ -93,7 +94,8 @@ export const localPage: Condition = {
   references: [],
 };
 
-export const allPages: Condition[] = [...conditions, localPage];
+// Pages de soins (ondes de choc) : accessibles et dans le sitemap, mais pas dans la grille des pathologies
+export const allPages: Condition[] = [...conditions, localPage, ondesDeChoc];
 
 export function getCondition(slug: string): Condition | undefined {
   return allPages.find((c) => c.slug === slug);

@@ -237,6 +237,7 @@ export const douleurEpaule: Condition = {
     { href: "/kinesitherapie/reeducation-post-operatoire", label: "Rééducation après une opération" },
     { href: "/kinesitherapie/cervicalgie", label: "Douleur de nuque (cervicalgie)" },
     { href: "/blog/approche-biopsychosociale-kinesitherapie", label: "Article : l'approche biopsychosociale en kinésithérapie" },
+    { href: "/kinesitherapie/ondes-de-choc", label: "Ondes de choc : indications et preuves" },
   ],
   references: [
     {

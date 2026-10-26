@@ -64,6 +64,9 @@ export type Condition = {
   /** « À quoi sert la kiné » : étapes de la prise en charge */
   careIntro?: string;
   care: CareStep[];
+  /** Titre et introduction de la grille de diagnostics (par défaut : « Pathologies prises en charge ») */
+  typesHeading?: string;
+  typesIntro?: string;
   /** Schéma pédagogique affiché sous « Comprendre » (facultatif) */
   diagram?: "charge-capacite";
   /** Signes d'alerte → avis médical (facultatif) */

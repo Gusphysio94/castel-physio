@@ -60,7 +60,7 @@ export default async function ConditionPage({ params }: Props) {
   const hasRefs = condition.references.length > 0;
 
   const nav = [
-    hasTypes && { id: "pathologies", label: "Pathologies prises en charge" },
+    hasTypes && { id: "pathologies", label: condition.typesHeading ?? "Pathologies prises en charge" },
     hasUnderstand && { id: "comprendre", label: "Comprendre" },
     hasMyths && { id: "idees-recues", label: "Idées reçues" },
     hasCare && { id: "kine", label: "À quoi sert la kiné" },
@@ -146,8 +146,8 @@ export default async function ConditionPage({ params }: Props) {
           <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
             <SectionHeading
               eyebrow="Prise en charge"
-              title="Pathologies prises en charge"
-              intro="Retrouvez ici le terme qui figure sur votre prescription. Si votre diagnostic n'apparaît pas tel quel, n'hésitez pas à me contacter."
+              title={condition.typesHeading ?? "Pathologies prises en charge"}
+              intro={condition.typesIntro ?? "Retrouvez ici le terme qui figure sur votre prescription. Si votre diagnostic n'apparaît pas tel quel, n'hésitez pas à me contacter."}
             />
             <div className="space-y-12">
               {condition.subtypeGroups.map((group) => (

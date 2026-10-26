@@ -47,6 +47,7 @@ export default function Footer() {
                 { href: "/", label: "Accueil" },
                 { href: "/kinesitherapie", label: "Kinésithérapie" },
                 { href: "/kinesitherapie/woluwe-saint-lambert", label: "Kiné à Woluwe-Saint-Lambert" },
+                { href: "/kinesitherapie/ondes-de-choc", label: "Ondes de choc" },
                 { href: "/formations", label: "Formations" },
                 { href: "/blog", label: "Blog" },
               ].map(({ href, label }) => (
